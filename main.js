@@ -16,6 +16,7 @@ for (let i = 0; i < element1.length; i++){
     element1[i].style.transform = "rotate(" + i * 20 + "deg)";
 }
 
+
 // document.addEventListener("mousemove", function(e){
 //     text.style.left = e.pageX + 'px';
 //     text.style.top = e.pageY + 'px';
