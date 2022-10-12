@@ -46,6 +46,11 @@ body{
     transform-origin: 0 100px;
 }
 
+/* #t1{
+    top: -200px;
+    transform-origin: 0 200px;
+} */
+
 /* ------------ header ------------ */
 .menu-container{
     display: flex;
@@ -82,7 +87,7 @@ a:hover{
 }
 
 /* ------------ titles ------------ */
-.title-container{
+.medium-container{
     display: flex;
     justify-content: center;
     height:200px;
@@ -92,13 +97,13 @@ a:hover{
     padding-top: 200px;
 }
 
-.medium-title{
+.medium-container .title{
     text-align: left;
     font-size: 80px;
 }
 
-.medium-text{
-    text-align: right;
+.medium-container .text{
+    text-align: center;
 }
 
 /* ------------ about me page ------------ */
@@ -120,7 +125,36 @@ a:hover{
     padding-left: 40%;
 }
 
-/* .about-me-container .image{
+.about-me-container .image{
     position: absolute;
     size-adjust: 20%;
-} */
+}
+
+/* ------------ interactive media page ------------ */
+
+.im-highlighted-container{
+    
+}
+
+/* ------------ page resizing: M screens ------------ */
+@media screen and (max-width: 900px){
+    .menu-item{
+        font-size: 16px;
+    }
+    .medium-container .title{
+        font-size: 60px;
+    }
+}
+
+/* ------------ page resizing: S screens ------------ */
+@media screen and (max-width: 600px){
+    .menu-item{
+        font-size: 14px;
+    }
+    .medium-container .title{
+        font-size: 50px;
+    }
+    .medium-container .text{
+        text-align: right;
+    }
+}
