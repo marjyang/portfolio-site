@@ -4,62 +4,6 @@ body{
     margin:0;
     background-color: rgb(241, 238, 229);
 }
-
-/* ------------ circle text on main page ------------ */
-*{
-    box-sizing: border-box;
-}
-
-.text-box{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
-    background-color: rgb(224, 218, 201);
-}
-
-.text-box .text{
-    position: absolute;
-    color:white;
-    font-size: 20px;
-    user-select: none;
-    pointer-events: none;
-    animation: Rotation 10s linear infinite;
-}
-
-@keyframes Rotation{
-    0%{
-        transform: rotate(360deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-
-.text-box .text span{
-    position: absolute;
-    top: -100px;
-    /* text-transform: uppercase; */
-    display: inline-block;
-    transform-origin: 0 100px;
-}
-
-/* #t1{
-    position: absolute;
-    top: -150px;
-    display: inline-block;
-    transform-origin: 0 150px;
-}
-
-#t2{
-    position: absolute;
-    top: -200px;
-    display: inline-block;
-    transform-origin: 0 200px;
-} */
-
 /* ------------ header ------------ */
 .menu-container{
     display: flex;
@@ -145,7 +89,7 @@ a:hover{
 .im-highlighted-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     background-color: rgb(255, 255, 255);
     flex-direction: column;
     height: 30%;
@@ -155,14 +99,14 @@ a:hover{
 .im-highlighted-container .title{
     font-size: 50px;
     letter-spacing: 20px;
-    text-align: center;
+    text-align: left;
     margin:0;
 }
 
 .im-highlighted-container .sub-heading{
-    font-size: 28px;
-    text-align: center;
-    margin: 10px;
+    font-size: 22px;
+    text-align: left;
+    margin: 0px;
 }
 
 .im-highlighted-container .desc{
@@ -181,25 +125,6 @@ a:hover{
     size: 200px;
 }
 
-/* ------------ page resizing: M screens ------------ */
-@media screen and (max-width: 900px){
-    .menu-item{
-        font-size: 16px;
-    }
-    .medium-container .title{
-        font-size: 60px;
-    }
-}
-
-/* ------------ page resizing: S screens ------------ */
-@media screen and (max-width: 600px){
-    .menu-item{
-        font-size: 14px;
-    }
-    .medium-container .title{
-        font-size: 50px;
-    }
-    .medium-container .text{
-        text-align: right;
-    }
+.im-container1{
+    
 }

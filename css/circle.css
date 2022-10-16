@@ -1,0 +1,54 @@
+/* ------------ circle text on main page ------------ */
+*{
+    box-sizing: border-box;
+}
+
+.text-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: rgb(224, 218, 201);
+}
+
+.text-box .text{
+    position: absolute;
+    color:white;
+    font-size: 20px;
+    user-select: none;
+    pointer-events: none;
+    animation: Rotation 10s linear infinite;
+}
+
+@keyframes Rotation{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.text-box .text span{
+    position: absolute;
+    top: -100px;
+    /* text-transform: uppercase; */
+    display: inline-block;
+    transform-origin: 0 100px;
+}
+
+/* #t1{
+    position: absolute;
+    top: -150px;
+    display: inline-block;
+    transform-origin: 0 150px;
+}
+
+#t2{
+    position: absolute;
+    top: -200px;
+    display: inline-block;
+    transform-origin: 0 200px;
+} */
