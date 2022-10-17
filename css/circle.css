@@ -19,7 +19,7 @@
     font-size: 20px;
     user-select: none;
     pointer-events: none;
-    animation: Rotation 10s linear infinite;
+    animation: Rotation 60s linear infinite;
 }
 
 @keyframes Rotation{
@@ -31,24 +31,80 @@
     }
 }
 
-.text-box .text span{
+/* .text-box .text span{
     position: absolute;
     top: -100px;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     display: inline-block;
     transform-origin: 0 100px;
+} */
+
+#t1 span{
+    position: absolute;
+    top: -120px;
+    display: inline-block;
+    transform-origin: 0 120px;
 }
 
-/* #t1{
+#t2 span{
     position: absolute;
     top: -150px;
     display: inline-block;
     transform-origin: 0 150px;
 }
 
-#t2{
+#t3 span{
     position: absolute;
-    top: -200px;
+    top: -180px;
     display: inline-block;
-    transform-origin: 0 200px;
-} */
+    transform-origin: 0 180px;
+}
+
+#t4 span{
+    position: absolute;
+    top: -210px;
+    display: inline-block;
+    transform-origin: 0 210px;
+}
+
+#t5 span{
+    position: absolute;
+    top: -240px;
+    display: inline-block;
+    transform-origin: 0 240px;
+}
+
+#t6 span{
+    position: absolute;
+    top: -270px;
+    display: inline-block;
+    transform-origin: 0 270px;
+}
+
+#t7 span{
+    position: absolute;
+    top: -300px;
+    display: inline-block;
+    transform-origin: 0 300px;
+}
+
+#t8 span{
+    position: absolute;
+    top: -330px;
+    display: inline-block;
+    transform-origin: 0 330px;
+}
+
+#t9 span{
+    position: absolute;
+    top: -360px;
+    display: inline-block;
+    transform-origin: 0 360px;
+}
+
+#t10 span{
+    position: absolute;
+    top: -390px;
+    display: inline-block;
+    transform-origin: 0 390px;
+}
