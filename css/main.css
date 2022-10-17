@@ -93,7 +93,7 @@ a:hover{
     background-color: rgb(255, 255, 255);
     flex-direction: column;
     height: 30%;
-    padding:5% 10% 5% 10%;
+    padding:5% 15% 5% 15%;
 }
 
 .im-highlighted-container .title{
@@ -155,4 +155,8 @@ a:hover{
 .im-container .desc{
     font-size: 16px;
     text-align: left; 
+}
+
+.im-container .img {
+
 }
