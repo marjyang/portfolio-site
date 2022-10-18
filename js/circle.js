@@ -5,7 +5,6 @@ const elementim = document.querySelectorAll('.circleim');
 
 for (let i = 0; i < elementim.length; i++){
     elementim[i].style.transform = "rotate(" + i * 7 + "deg)";
-    // elementim[i].onclick.function(location.href = "www.yoursite.com");
 }
 
 const textgd =  document.querySelector('#t-gd');
