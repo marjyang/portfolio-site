@@ -38,6 +38,33 @@
     display: inline-block;
     transform-origin: 0 100px;
 } */
+#t-im span{
+    position: relative;
+    top: -120px;
+    display: inline-block;
+    transform-origin: 0 120px;
+    text-decoration: none;
+    color: red;
+}
+
+#t-gd span{
+    position: relative;
+    top: -120px;
+    display: inline-block;
+    transform-origin: 0 120px;
+    text-decoration: none;
+    color: red;
+}
+
+#t-others span{
+    position: relative;
+    top: -120px;
+    display: inline-block;
+    transform-origin: 0 120px;
+    text-decoration: none;
+    color: pink;
+}
+
 
 #t1 span{
     position: absolute;
