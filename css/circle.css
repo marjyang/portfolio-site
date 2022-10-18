@@ -19,51 +19,75 @@
     font-size: 20px;
     user-select: none;
     pointer-events: none;
-    animation: Rotation 60s linear infinite;
+    animation: Rotation1 35s linear infinite;
 }
 
-@keyframes Rotation{
+@keyframes Rotation1{
     0%{
-        transform: rotate(360deg);
-    }
-    100%{
         transform: rotate(0deg);
     }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
-/* .text-box .text span{
+.text-box .text-page-im{
     position: absolute;
-    top: -100px;
-    text-transform: uppercase;
-    display: inline-block;
-    transform-origin: 0 100px;
-} */
+    color:orangered;
+    font-size: 20px;
+    user-select: none;
+    pointer-events: none;
+    animation: Rotation2 50s linear infinite;
+}
+
+@keyframes Rotation2{
+    0%{
+        transform: rotate(190deg);
+    }
+    100%{
+        transform: rotate(550deg);
+    }
+}
+
+.text-box .text-page-gd{
+    position: absolute;
+    color:orangered;
+    font-size: 20px;
+    user-select: none;
+    pointer-events: none;
+    animation: Rotation3 70s linear infinite;
+}
+
+@keyframes Rotation3{
+    0%{
+        transform: rotate(50deg);
+    }
+    100%{
+        transform: rotate(410deg);
+    }
+}
+
 #t-im span{
-    position: relative;
-    top: -120px;
+    position: absolute;
+    top: -180px;
     display: inline-block;
-    transform-origin: 0 120px;
-    text-decoration: none;
-    color: red;
+    transform-origin: 0 180px;
 }
 
 #t-gd span{
-    position: relative;
-    top: -120px;
+    position: absolute;
+    top: -300px;
     display: inline-block;
-    transform-origin: 0 120px;
-    text-decoration: none;
-    color: red;
+    transform-origin: 0 300px;
 }
 
+/* 
 #t-others span{
-    position: relative;
+    position: absolute;
     top: -120px;
     display: inline-block;
     transform-origin: 0 120px;
-    text-decoration: none;
-    color: pink;
-}
+} */
 
 
 #t1 span{
@@ -80,58 +104,115 @@
     transform-origin: 0 150px;
 }
 
-#t3 span{
-    position: absolute;
-    top: -180px;
-    display: inline-block;
-    transform-origin: 0 180px;
-}
 
-#t4 span{
+#t3 span{
     position: absolute;
     top: -210px;
     display: inline-block;
     transform-origin: 0 210px;
 }
 
-#t5 span{
+#t4 span{
     position: absolute;
     top: -240px;
     display: inline-block;
     transform-origin: 0 240px;
 }
 
-#t6 span{
+#t5 span{
     position: absolute;
     top: -270px;
     display: inline-block;
     transform-origin: 0 270px;
 }
 
-#t7 span{
-    position: absolute;
-    top: -300px;
-    display: inline-block;
-    transform-origin: 0 300px;
-}
-
-#t8 span{
+#t6 span{
     position: absolute;
     top: -330px;
     display: inline-block;
     transform-origin: 0 330px;
 }
 
-#t9 span{
+#t7 span{
     position: absolute;
     top: -360px;
     display: inline-block;
     transform-origin: 0 360px;
 }
 
-#t10 span{
+#t8 span{
     position: absolute;
     top: -390px;
     display: inline-block;
     transform-origin: 0 390px;
+}
+
+#t9 span{
+    position: absolute;
+    top: -420px;
+    display: inline-block;
+    transform-origin: 0 420px;
+}
+
+#t10 span{
+    position: absolute;
+    top: -450px;
+    display: inline-block;
+    transform-origin: 0 450px;
+}
+
+#t11 span{
+    position: absolute;
+    top: -480px;
+    display: inline-block;
+    transform-origin: 0 480px;
+}
+
+#t12 span{
+    position: absolute;
+    top: -510px;
+    display: inline-block;
+    transform-origin: 0 510px;
+}
+
+#t13 span{
+    position: absolute;
+    top: -540px;
+    display: inline-block;
+    transform-origin: 0 540px;
+}
+
+#t14 span{
+    position: absolute;
+    top: -570px;
+    display: inline-block;
+    transform-origin: 0 570px;
+}
+
+#t15 span{
+    position: absolute;
+    top: -600px;
+    display: inline-block;
+    transform-origin: 0 600px;
+}
+
+#t16 span{
+    position: absolute;
+    top: -630px;
+    display: inline-block;
+    transform-origin: 0 630px;
+}
+
+#t17 span{
+    position: absolute;
+    top: -660px;
+    display: inline-block;
+    transform-origin: 0 660px;
+}
+
+#t18 span{
+    position: absolute;
+    top: -690px;
+    display: inline-block;
+    transform-origin: 0 690px;
 }

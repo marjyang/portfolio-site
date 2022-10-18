@@ -31,12 +31,12 @@ body{
 
 /* ------------ links ------------ */
 a{
-    color: blue;
+    color: green;
     text-decoration: none;
 }
 
 a:hover{
-    color: rgb(255, 0, 0);
+    color: blue;
 }
 
 /* ------------ titles ------------ */
@@ -148,7 +148,7 @@ a:hover{
     font-size: 22px;
     text-align: left;
     margin: 0px;
-    color: blue;
+    color: red;
 
 }
 
