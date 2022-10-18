@@ -31,7 +31,7 @@ body{
 
 /* ------------ links ------------ */
 a{
-    color: green;
+    color: red;
     text-decoration: none;
 }
 
@@ -49,6 +49,7 @@ a:hover{
     padding: 10%;
     padding-top: 200px;
     padding-bottom: 300px;
+    
 }
 
 .medium-container .title{
@@ -87,13 +88,15 @@ a:hover{
 /* ------------ interactive media page ------------ */
 
 .im-highlighted-container{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    border-radius: 25px;
     background-color: rgb(255, 255, 255);
     flex-direction: column;
     height: 30%;
-    padding:5% 15% 5% 15%;
+    padding:5% 5% 5% 5%;
+    margin: 0 8% 0 8%;
 }
 
 .im-highlighted-container .title{
@@ -117,14 +120,26 @@ a:hover{
     letter-spacing: 0px;
 }
 
-.highlighted-gallery{
+/* .im-highlighted-container .highlighted-gallery{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
 
+.im-highlighted-container .highlighted-gallery .image{
+    height: 250px;
+} */
+
+.highlighted-gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0 10% 0 10%;
+
+}
+
 .highlighted-gallery .image{
-    size: 200px;
+    height: 250px;
 }
 
 .im-container{
@@ -135,6 +150,8 @@ a:hover{
     flex-direction: column;
     height: 30%;
     padding:5% 10% 5% 10%;
+    margin: 40px 0 40px 0;
+
 }
 
 .im-container .title{
@@ -157,6 +174,6 @@ a:hover{
     text-align: left; 
 }
 
-.im-container .img {
+.im-container .image {
 
 }
