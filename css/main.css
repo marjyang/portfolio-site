@@ -23,7 +23,6 @@ body{
 .menu-container{
     display: flex;
     justify-content:space-around;
-    /* margin-left: 45px; */
     padding: 20px 10% 20px 10%;
 }
 
@@ -103,16 +102,39 @@ a:hover{
 /* ------------ interactive media page ------------ */
 
 .im-highlighted-container{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     border-radius: 25px;
-    background-color: rgb(255, 255, 255);
-    flex-direction: column;
     height: 30%;
     padding:5% 5% 5% 5%;
     margin: 0 8% 0 8%;
+    border-color: white;
+    
+    position: relative;
+    overflow:hidden;
 }
+
+    .im-highlighted-container:before{
+        content:"";
+        position:absolute;
+        width: 2200px;
+        height:2200px;
+        background:rgb(157, 180, 227);
+        left: 50%;
+        transform:translateX(-50%);
+        border-radius: 40%;
+        animation: fill 20s ease-in-out infinite;
+        z-index: -1;
+    }
+
+    @keyframes fill{
+        from{
+            top:250px;
+            transform:translateX(-50%) rotate(0deg);
+        }
+        to{
+            top:-50px;
+            transform:translateX(-50%) rotate(360deg);
+        }
+    }
 
 .im-highlighted-container .title{
     font-size: 50px;
@@ -131,64 +153,54 @@ a:hover{
 .im-highlighted-container .desc{
     font-size: 16px;
     text-align: center; 
-    /* margin: 0 10% 0 50%; */
     letter-spacing: 0px;
 }
 
-/* .im-highlighted-container .highlighted-gallery{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
-
-.im-highlighted-container .highlighted-gallery .image{
-    height: 250px;
-} */
-
-.highlighted-gallery{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 0 10% 0 10%;
-
-}
-
-.highlighted-gallery .image{
-    height: 250px;
-}
-
 .im-container{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    height: 30%;
+    padding:5% 10% 5% 10%;
+    margin: 40px 0 40px 0;
+
+    border-radius: 25px;
+    height: 30%;
+    padding:5% 5% 5% 5%;
+    margin: 5% 8% 5% 8%;
+    border-color: white;
+
+}
+
+.im-text-container{
     display: flex;
     justify-content: center;
     align-items: left;
     background-color: rgb(255, 255, 255);
     flex-direction: column;
-    height: 30%;
-    padding:5% 10% 5% 10%;
-    margin: 40px 0 40px 0;
-
 }
 
-.im-container .title{
-    font-size: 40px;
-    letter-spacing: 6px;
-    text-align: left;
-    margin:0;
-}
+    .im-text-container .title{
+        font-size: 40px;
+        letter-spacing: 6px;
+        text-align: left;
+        margin: 5px 0 5px 0;
+    }
 
-.im-container .sub-heading{
-    font-size: 22px;
-    text-align: left;
-    margin: 0px;
-    color: red;
+    .im-text-container .sub-heading{
+        font-size: 22px;
+        text-align: left;
+        color: red;
+        margin: 5px 0 5px 0;
 
-}
+    }
 
-.im-container .desc{
-    font-size: 16px;
-    text-align: left; 
-}
+    .im-text-container .desc{
+        font-size: 16px;
+        text-align: left; 
+        margin: 10px 0 5px 0;
 
-.im-container .image {
+    }
 
-}
