@@ -1,22 +1,101 @@
-/* ------------ page resizing: M screens ------------ */
-@media screen and (max-width: 900px){
-    .menu-item{
-        font-size: 16px;
-    }
-    .medium-container .title{
-        font-size: 60px;
-    }
-}
-
-/* ------------ page resizing: S screens ------------ */
-@media screen and (max-width: 600px){
+/* ------------ page resizing: tablet screens (Surface Pro 7) ------------ */
+@media screen and (max-width: 912px){
     .menu-item{
         font-size: 14px;
     }
+
     .medium-container .title{
+        font-size: 65px;
+        margin: 0 10% 5% 10%;
+    }
+    .medium-container .text{
+        text-align: center;
+        margin: 0 10% 0 10%;
+    }
+
+    .about-me-title{
+        font-size: 60px;
+        margin-top: 40px;
+    }
+
+    .about-me-container{
+        flex-direction: row;
+        padding: 0 15% 0 15%;
+        height: 100vh;
+        justify-content: center;
+    }
+    .about-me-container .image{
+        width: 250px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .about-me-container .text{
+        font-size: 14px;
+    }
+
+    .message-button{
+        margin-bottom: 20%;
+    }
+
+    .im-container{
+        margin-top: 10%;
+    }
+
+    .im-visualizer-container{
+        margin: 30% 8% 5% 8%;
+    }
+    .im-visualizer-container .video-container{
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .im-visualizer-container .video{
+        flex-direction: column;
+        margin: 0px;
+    }
+}
+
+/* ------------ page resizing: mobile screens (iPhone XR) ------------ */
+@media screen and (max-width: 414px){
+    .menu-item{
+        font-size: 12px;
+        padding:0 2% 0 2%;
+    }
+
+    .medium-container .title{
+        text-align: left;
         font-size: 50px;
+        margin: 0 10% 5% 10%;
     }
     .medium-container .text{
         text-align: right;
+        margin: 0 10% 0 10%;
     }
+
+    .about-me-title{
+        font-size: 50px;
+        margin-top: 40px;
+    }
+    .about-me-container{
+        flex-direction: column;
+        padding: 0 5% 0 5%;
+        height: 80vh;
+        align-items: center;
+    }
+    .about-me-container .text{
+        padding: 0;
+        font-size: 14px;
+    }
+    .about-me-container .image{
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .message-button{
+        margin-bottom: 20%;
+    }
+
+
 }

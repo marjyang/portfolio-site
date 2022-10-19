@@ -36,11 +36,11 @@ body{
 }
 
 .logo-item{
-    font-size: 20px;
-    color: rgb(80, 19, 124);
+    font-size: 18px;
     flex-basis: 100px;
     flex-grow:0;
     margin-left: 10%;
+    font-style: italic;
 }
 
 /* ------------ links ------------ */
@@ -57,50 +57,70 @@ a:hover{
 .medium-container{
     display: flex;
     justify-content: center;
-    height:200px;
+    height:80vh;
     align-items: center;
     flex-direction: column;
-    padding: 10%;
-    padding-top: 200px;
-    padding-bottom: 300px;
+    /* padding: 10%; */
+    /* padding-top: 200px; */
+    padding-bottom: 20vh;
     
 }
 
 .medium-container .title{
-    text-align: left;
+    text-align: center;
     font-size: 80px;
 }
 
 .medium-container .text{
     text-align: center;
+    margin: 0 10% 0 10%;
 }
 
 /* ------------ about me page ------------ */
-.about-me-container{
-    display: flex;
-    justify-content: center;
-    height: 600px;
-    flex-direction: column;
-    padding: 0 15% 0 15%;
-    padding-top: 10px;
-}
-
-
-.about-me-container .title{
+.about-me-title{
     font-size: 75px;
     font-style:italic;
+    margin:3% 15% 2% 15%;
+    text-align: center;
+}
+
+.about-me-container{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    flex-direction: row;
+    padding: 0 25% 0 25%;
+    /* margin: 0 10% 0 10%; */
+    margin-top: 0;
 }
 
 .about-me-container .text{
-    padding-left: 40%;
+    padding-left: 50px;
+    font-size: 16px;
+
 }
 
 .about-me-container .image{
-    position: fixed;
-    width: 300px;
-
+    width: 300px ;
+    height: 500px;
+    object-fit: cover;
 }
 
+.message-button{
+    color:red;
+    border: 2px solid red;
+    transition-duration: 0.4s;
+    font-size: 20px;
+    float: right;
+    margin-top: 20px;
+    padding:5px;
+    font-style: italic;
+}
+
+.message-button:hover {
+    background-color:red; /* Green */
+    color: white;
+}
 
 /* ------------ interactive media page ------------ */
 
@@ -123,17 +143,17 @@ a:hover{
         left: 50%;
         transform:translateX(-50%);
         border-radius: 40%;
-        animation: fill 20s ease-in-out infinite;
+        animation: fill 15s ease-in-out infinite;
         z-index: -1;
     }
 
     @keyframes fill{
         0%{
-            top:400px;
+            top:380px;
             transform:translateX(-50%) rotate(0deg);
             opacity: 100%;
         }
-        80%{
+        90%{
             opacity: 100%;
         }
         100%{
@@ -231,4 +251,14 @@ a:hover{
 .im-visualizer-container .video-container{
     display:flex;
     justify-content: center;
+}
+
+.im-visualizer-container .video-container .video{
+    height: 335px;
+}
+
+
+/* ------------footer------------ */
+.footer{
+    margin-bottom: 200px;
 }

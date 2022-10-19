@@ -1,3 +1,6 @@
+
+
+
 const textim =  document.querySelector('#t-im');
 textim.innerHTML = textim.textContent.replace(/\S/g, "<span class ='circleim'>$&</span>");
 
@@ -95,7 +98,7 @@ text9.innerHTML = text9.textContent.replace(/\S/g, "<span class ='circle9'>$&</s
 
 const element9 = document.querySelectorAll('.circle9');
 
-for (let i = 0; i < element7.length; i++){
+for (let i = 0; i < element9.length; i++){
     element9[i].style.transform = "rotate(" + i * 2.5 + "deg)";
 }
 
