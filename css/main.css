@@ -5,6 +5,7 @@ body{
 
     margin:0;
     background-color: rgb(241, 238, 229);
+    /* cursor: none; */
 }
 
 .fade{
@@ -204,7 +205,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: left;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     flex-direction: column;
 }
 
@@ -228,6 +229,10 @@ a:hover{
         margin: 10px 0 5px 0;
 
     }
+
+.red-border{
+    border: 5px solid red;
+}
 
 .im-visualizer-container{
     display:flex;
@@ -264,3 +269,16 @@ a:hover{
 .footer{
     margin-bottom: 200px;
 }
+
+/* .circle {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 0%;
+    left: 0%;
+    transform: translate(50%,-50%);
+    background-color: red;
+    border-radius: 50%;
+    margin-bottom: 20rem;
+    /* backface-visibility: hidden; */
+/* } */
