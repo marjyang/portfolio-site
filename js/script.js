@@ -1,19 +1,24 @@
-// const cursor = document.querySelector('.circle');
+// cursor
+const cursor = document.querySelector('.cursor');
+let links = document.querySelectorAll('a');
 
-// const moveCursor = (e)=> {
-//     const mouseY = e.clientY;
-//     const mouseX = e.clientX;
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute('style', 'top: ' + e.pageY + 'px; left: ' + e.pageX + 'px;');
+});
+
+for (let i = 0; i < links.length; i++){
+    links[i].addEventListener('mouseleave', () =>{
+        cursor.classList.remove('link-change');
+    });
     
-//     cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-   
-//   }
-  
-// window.addEventListener('mousemove', moveCursor)
+    links[i].addEventListener('mouseover', () =>{
+        cursor.classList.add('link-change');
+    });
+}
 
-let imBox = document.getElementsByClassName('im-container');
+// take user back to top
+const buttonToTop = document.querySelector('#scrollToTop');
 
-imBox.addEventListener('mouseover', (e) => {});
-
-const onmouseover = (e) => { 
-    
-};
+buttonToTop.addEventListener('click', () =>{
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+});

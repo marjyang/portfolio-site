@@ -1,6 +1,4 @@
 
-
-
 const textim =  document.querySelector('#t-im');
 textim.innerHTML = textim.textContent.replace(/\S/g, "<span class ='circleim'>$&</span>");
 
@@ -18,7 +16,6 @@ const elementgd = document.querySelectorAll('.circlegd');
 for (let i = 0; i < elementgd.length; i++){
     elementgd[i].style.transform = "rotate(" + i * 5 + "deg)";
 }
-
 
 
 const text1=  document.querySelector('#t1');
