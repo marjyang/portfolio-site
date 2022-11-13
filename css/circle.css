@@ -31,7 +31,7 @@ body{
 
 .text-box .text{
     position: absolute;
-    color: rgb(253, 144, 42);
+    color: rgb(249, 138, 255);
     font-size: 20px;
     user-select: none;
     pointer-events: none;
