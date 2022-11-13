@@ -1,6 +1,6 @@
 /* ------------ circle text on main page ------------ */
 body{
-    background-color: rgb(224, 218, 201);
+    /* background-color: rgb(224, 218, 201); */
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -26,12 +26,12 @@ body{
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    background-color: rgb(224, 218, 201);
+    /* background-color: rgb(224, 218, 201); */
 }
 
 .text-box .text{
     position: absolute;
-    color:white;
+    color: rgb(249, 138, 255);
     font-size: 20px;
     user-select: none;
     pointer-events: none;

@@ -1,10 +1,10 @@
-
 body{
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Work Sans', sans-serif;
 
     margin:0;
-    background-color: rgb(241, 238, 229);
+    background-color: white;
+    cursor: none;
 }
 
 .fade{
@@ -21,6 +21,49 @@ body{
         opacity: 1;
      }
 }
+
+/* ------------ cursor ------------ */
+
+.cursor{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 10ms;
+    transition-timing-function: ease-out;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transform-origin: 100% 100%;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+}
+
+.link-change{
+    transform: scale(3);
+    z-index: -1;
+    /* background-color: transparent; */
+    /* border: .7px solid red; */
+}
+
+/* ------------ scroll to top ------------ */
+
+#scrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    opacity: 80%;
+    color: white;
+    border:none;
+}
+
+#scrollToTop:active{
+    background: red;
+}
+
 /* ------------ header ------------ */
 .menu-container{
     display: flex;
@@ -53,6 +96,7 @@ a{
 
 a:hover{
     color: blue;
+    cursor: none;
 }
 
 /* ------------ titles ------------ */
@@ -204,7 +248,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: left;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     flex-direction: column;
 }
 
@@ -228,6 +272,10 @@ a:hover{
         margin: 10px 0 5px 0;
 
     }
+
+.red-border{
+    border: 5px solid red;
+}
 
 .im-visualizer-container{
     display:flex;
@@ -264,3 +312,9 @@ a:hover{
 .footer{
     margin-bottom: 200px;
 }
+
+#bottom-top{
+    display: flex;
+    justify-content: center;
+}
+
