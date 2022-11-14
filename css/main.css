@@ -40,7 +40,7 @@ body{
 }
 
 .link-change{
-    transform: scale(3);
+    /* background-color: rgb(249, 138, 255); */
     z-index: -1;
     /* background-color: transparent; */
     /* border: .7px solid red; */
@@ -95,7 +95,7 @@ a{
 }
 
 a:hover{
-    color: blue;
+    color: rgb(255, 163, 163);
     cursor: none;
 }
 

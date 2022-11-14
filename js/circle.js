@@ -1,23 +1,3 @@
-
-const textim =  document.querySelector('#t-im');
-textim.innerHTML = textim.textContent.replace(/\S/g, "<span class ='circleim'>$&</span>");
-
-const elementim = document.querySelectorAll('.circleim');
-
-for (let i = 0; i < elementim.length; i++){
-    elementim[i].style.transform = "rotate(" + i * 7 + "deg)";
-}
-
-const textgd =  document.querySelector('#t-gd');
-textgd.innerHTML = textgd.textContent.replace(/\S/g, "<span class ='circlegd'>$&</span>");
-
-const elementgd = document.querySelectorAll('.circlegd');
-
-for (let i = 0; i < elementgd.length; i++){
-    elementgd[i].style.transform = "rotate(" + i * 5 + "deg)";
-}
-
-
 const text1=  document.querySelector('#t1');
 text1.innerHTML = text1.textContent.replace(/\S/g, "<span class ='circle1'>$&</span>");
 

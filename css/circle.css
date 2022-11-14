@@ -31,7 +31,7 @@ body{
 
 .text-box .text{
     position: absolute;
-    color: rgb(249, 138, 255);
+    color: rgb(255, 163, 163);
     font-size: 20px;
     user-select: none;
     pointer-events: none;
@@ -47,43 +47,43 @@ body{
     }
 }
 
-.text-box .text-page-im{
+/* .text-box .text-page-im{
     position: absolute;
     color:orangered;
     font-size: 20px;
     user-select: none;
     pointer-events: none;
     animation: Rotation2 50s linear infinite;
-}
+} */
 
-@keyframes Rotation2{
+/* @keyframes Rotation2{
     0%{
         transform: rotate(190deg);
     }
     100%{
         transform: rotate(550deg);
     }
-}
+} */
 
-.text-box .text-page-gd{
+/* .text-box .text-page-gd{
     position: absolute;
     color:orangered;
     font-size: 20px;
     user-select: none;
     pointer-events: none;
     animation: Rotation3 70s linear infinite;
-}
+} */
 
-@keyframes Rotation3{
+/* @keyframes Rotation3{
     0%{
         transform: rotate(50deg);
     }
     100%{
         transform: rotate(410deg);
     }
-}
+} */
 
-#t-im span{
+/* #t-im span{
     position: absolute;
     top: -180px;
     display: inline-block;
@@ -95,16 +95,7 @@ body{
     top: -300px;
     display: inline-block;
     transform-origin: 0 300px;
-}
-
-/* 
-#t-others span{
-    position: absolute;
-    top: -120px;
-    display: inline-block;
-    transform-origin: 0 120px;
 } */
-
 
 #t1 span{
     position: absolute;
