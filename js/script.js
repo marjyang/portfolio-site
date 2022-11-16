@@ -30,19 +30,6 @@ buttonToTop.addEventListener('click', () =>{
 
 
 
-//contact form
-
-
-// const form = document.querySelector('#form-link');
-// let contactForm = document.querySelector('#contact-form');
-// let shadow = document.querySelector('.shadow');
-
-// form.addEventListener('click', () => {
-//     contactForm.classList.add('display');
-//     shadow.classList.add('display');
-// })
-
-
 // //lightbox
 // const lightbox = document.querySelector('#lightbox');
 // const images = document.querySelectorAll('.sketch-image');
