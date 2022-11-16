@@ -31,13 +31,14 @@ buttonToTop.addEventListener('click', () =>{
 
 
 // //lightbox
-// const lightbox = document.querySelector('#lightbox');
-// const images = document.querySelectorAll('.sketch-image');
-// images.forEach(image => {
-//     image.addEventListener('click', e => {
-//         lightbox.classList.add('lightbox-active');
-//         const img = document.createElement('img');
-//         img.src = image.src;
-//         lightbox.appendChild(img);
-//     });
-// });
+const lightbox = document.querySelector('#lightbox');
+const images = document.querySelectorAll('.sketch-image');
+
+images.forEach(i => {
+    i.addEventListener('click', e => {
+        lightbox.classList.add('lightbox-active');
+        const img = document.createElement('img');
+        img.src = i.src;
+        lightbox.appendChild(img);
+    });
+});
