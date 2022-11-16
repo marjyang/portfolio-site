@@ -16,6 +16,15 @@ for (let i = 0; i < element2.length; i++){
     element2[i].style.transform = "rotate(" + i * 9 + "deg)";
 }
 
+const texta =  document.querySelector('#ta');
+texta.innerHTML = texta.textContent.replace(/\S/g, "<span class ='circlea'>$&</span>");
+
+const elementa = document.querySelectorAll('.circlea');
+
+for (let i = 0; i < elementa.length; i++){
+    elementa[i].style.transform = "rotate(" + i * 9 + "deg)";
+}
+
 const text3 =  document.querySelector('#t3');
 text3.innerHTML = text3.textContent.replace(/\S/g, "<span class ='circle3'>$&</span>");
 
@@ -41,6 +50,15 @@ const element5 = document.querySelectorAll('.circle5');
 
 for (let i = 0; i < element5.length; i++){
     element5[i].style.transform = "rotate(" + i * 4 + "deg)";
+}
+
+const textb =  document.querySelector('#tb');
+textb.innerHTML = textb.textContent.replace(/\S/g, "<span class ='circleb'>$&</span>");
+
+const elementb = document.querySelectorAll('.circleb');
+
+for (let i = 0; i < elementb.length; i++){
+    elementb[i].style.transform = "rotate(" + i * 4 + "deg)";
 }
 
 const text6 =  document.querySelector('#t6');
