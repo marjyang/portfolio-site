@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Work Sans', sans-serif;
@@ -416,9 +420,12 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 25px 0 25px;
+    align-items: center;
 }
 .currently-per{
-    margin: 0 25px 0 25px;
+    margin: 0 20px 0 0;
+    flex: 0 1 15%;
 }
 .currently-title{
     font-size: 20px;
@@ -427,6 +434,13 @@ a:hover{
 }
 .currently-desc{
     font-size: 18px;
+}
+
+.currently-img{
+    margin-top: 2px;
+    height: 50px;
+    width: auto;
+    transition: all 0.3s;
 }
 
 /* ------------ contact form ------------ */
