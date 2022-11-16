@@ -43,7 +43,7 @@ section {
     display: flex;
     justify-content: space-between;
     z-index: 100;
-    box-shadow: 0 2px 25px  rgba(255, 0, 0, 0.4);
+    box-shadow: 0 0 15px  rgba(255, 0, 0, 0.5);
 }
 
 nav a {
@@ -189,6 +189,7 @@ nav a:hover {
     object-fit: cover;
     transition:all 0.2s;
 }
+
 .sketch-image:hover{
     height:330px;
     margin-top: 5px;
@@ -203,22 +204,25 @@ nav a:hover {
     grid-gap: 5px;
 }
 
-#lightbox{
-    position: fixed;
-    z-index: 1000;
-    top: 0;
+
+.lightbox {
+    display: none;
     width: 100%;
-    height:100%;
-    background-color: rgba(0,0,0,0.8);
-    display:none;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 30px;
+    box-sizing: border-box;
 }
-
-.lightbox-active{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+.lightbox img {
+    display: block;
+    margin: auto;
 }
-
+  
 /* ------------ art v.2 ------------ */
 
 .art-title-container{
@@ -322,13 +326,14 @@ input:hover, textarea:hover {
     transform: translate(-50%, -50%);
     pointer-events: none;
     transform-origin: 100% 100%;
-    transition: all 0.3s ease;
-    transition-property: background, transform;
+    transition: all 0.1s ease;
+    transition-property: scale;
     z-index:1000;
 }
 
 .link-change{
-     z-index: 10000; 
+    z-index: 10000; 
+    scale: 0.7;
 }
 
 /* ------------ links ------------ */
@@ -342,33 +347,84 @@ a:hover{
     cursor: none;
 }
 
+::selection {
+    background: rgb(237, 226, 214);
+}
+
 /* ------------ about me page ------------ */
-.about-me-title{
-    font-size: 75px;
-    font-style:italic;
-    margin:3% 15% 2% 15%;
-    text-align: center;
+.about-title{
+    font-size: 48px;
+    margin: 10px 20px 10px 20px;
 }
 
-.about-me-container{
+.container-section-h{
     display: flex;
-    justify-content: space-evenly;
-    height: 500px;
     flex-direction: row;
-    padding: 0 25% 0 25%;
-    margin-top: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px 0 0;
+}
+.container-all{
+    display: flex;
+    flex-direction: column;
 }
 
-.about-me-container-text{
-    padding-left: 50px;
-    font-size: 16px;
+.container-section-1h{
+    display: flex;
+    flex-direction: row;
 }
 
-.about-me-container-image{
-    height:340px;
-    width:235px;
+.container-section-1v{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-section-2h{
+    display: flex;
+    flex-direction: row;
+}
+.about-sub{
+    font-size: 30px;
+    color: red;
+    margin: 15px 0 0 25px;
+}
+
+.about-desc{
+    margin: 0 15px 0 25px;
+    font-size: 18px;
+}
+.list-items{
+    list-style: none;
+    font-size: 18px;
+    margin: 10px 15px 0 0;
+}
+
+.about-img{
+    height: 500px;
+    width: 560px;
     object-fit: cover;
-    overflow: hidden;
+    margin: 0 25px 0 0;
+    box-shadow: 0 0 10px rgb(255, 146, 146);
+    transition: all 0.3s;
+}
+.about-img:hover{
+    box-shadow: 0 0 25px rgb(255, 146, 146)
+}
+
+.container-section-3h{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.currently-per{
+    margin: 0 25px 0 25px;
+}
+.currently-title{
+    font-size: 20px;
+    font-style: italic;
+}
+.currently-desc{
+    font-size: 18px;
 }
 
 /* ------------ contact form ------------ */
@@ -446,3 +502,13 @@ input:hover, textarea:hover {
     color: red;
     border: 2px solid red;
 } */
+
+
+
+/* box-shadow:
+0 0 60px 30px rgb(255, 216, 216), 
+0 0 100px 60px rgb(255, 243, 233),
+0 0 140px 90px white; */
+
+
+
