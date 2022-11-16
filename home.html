@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/resize.css">
+    <script defer src = "js/script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>home</title>
@@ -18,14 +19,16 @@
     <nav id="main-nav">
         <a href="/index.html">m</a>
         <a href="#work">work</a>
-        <a href="#art">art</a>
+        <a href="#artv1">art1</a>
+        <a href="#artv2">art2</a>
         <a href="/about-me.html">about</a>
-        <a href="#contact">contact</a>
+        <a href="#contact-me">contact</a>
+        <!-- <button id="form-link" type="button">contact</button> -->
     </nav>
     <section id="header">
         <div class = "deco-circle"></div>
         <div class = "introduction-container">
-          <div class = "intro-head">marjorie is an NYC based multidisciplinary artist currently studying interactive media arts at NYU.</div> 
+          <div class = "intro-head">marjorie is an NYC based multidisciplinary designer currently studying interactive media arts at NYU.</div> 
           <div class = "intro-sub">as a solutions-oriented individual with a passion for the intersections between ART, TECHNOLOGY, and SOCIAL JUSTICE, marjorie hopes to create meaningful and innovative work that both informs and inspires.</div>
         </div>
     </section>
@@ -37,7 +40,7 @@
         </div>
         <div class="projects-container">
             <div class="image">
-                <img class ="image-img" src="/images/Rising_IMG1.JPG" alt="Rising">
+                <img class ="image-img" src="/images/rising-cover.JPG" alt="Rising">
                 <div class = "image-overlay image-overlay-blur">
                     <div class="image-title">RISING</div>
                     <p class = "image-desc">immersive game installation</p>
@@ -45,20 +48,21 @@
                 </div>
             </div>
             <div class="image">
-                <img class ="image-img" src="/images/Rising_IMG1.JPG" alt="Not Very Peachy">
+                <img class ="image-img" src="/images/covid19-cover.png" alt="Covid-19 Impact Project - Part-time">
+                <div class = "image-overlay image-overlay-blur">
+                    <div class="image-title">COVID-19 IMPACT PROJECT</div>
+                    <p class = "image-desc">web designer and developer</p>
+                </div>
+            </div>
+            <div class="image">
+                <img class ="image-img" src="/images/peachy-demoshot.png" alt="Not Very Peachy">
                 <div class = "image-overlay image-overlay-blur">
                     <div class="image-title">NOT VERY PEACHY</div>
                     <p class = "image-desc">VR game</p>
                     <p class = "image-desc">creator and developer</p>
                 </div>
             </div>
-            <div class="image">
-                <img class ="image-img" src="/images/Rising_IMG1.JPG" alt="Covid-19 Impact Project - Part-time">
-                <div class = "image-overlay image-overlay-blur">
-                    <div class="image-title">COVID-19 IMPACT PROJECT</div>
-                    <p class = "image-desc">web designer and developer</p>
-                </div>
-            </div>
+
         </div>
         <div class="work-title-container">
             <div class="section-title">work</div>
@@ -67,14 +71,14 @@
         </div>
         <div class="projects-container">
             <div class="image">
-                <img class ="image-img" src="/images/Rising_IMG1.JPG" alt="Hengdu Law Firm - Internship">
+                <img class ="image-img" src="/images/hengdulaw-cover.png" alt="Hengdu Law Firm - Internship">
                 <div class = "image-overlay image-overlay-blur">
                     <div class="image-title">HENGDU LAW FIRM</div>
                     <p class = "image-desc">graphic design intern</p>
                 </div>
             </div>
             <div class="image">
-                <img class ="image-img" src="/images/Rising_IMG1.JPG" alt="Love Locked">
+                <img class ="image-img" src="/images/" alt="Love Locked">
                 <div class = "image-overlay image-overlay-blur">
                     <div class="image-title">LOVE LOCKED</div>
                     <p class = "image-desc">short film</p>
@@ -82,7 +86,7 @@
                 </div>
             </div>
             <div class="image">
-                <img class ="image-img" src="/images/Rising_IMG1.JPG" alt="Empathy Man">
+                <img class ="image-img" src="/images/" alt="Empathy Man">
                 <div class = "image-overlay image-overlay-blur">
                     <div class="image-title">EMPATHY MAN</div>
                     <div class="image-desc">short film</div>
@@ -92,11 +96,12 @@
         </div>
     </section>
 
-    <section id="art">
+    <section id="artv1">
         <div class = "art-title-container">
-            <div class="section-title">some art</div>
+            <div class="section-title">some art from my sketch journal</div>
             <p class = "section-red">click to enlarge sketch</p>
         </div>
+        <div id="lightbox"></div>
         <div class = "art-container">
             <img class = "sketch-image" src="/images/sketch-1.JPG">
             <img class = "sketch-image" src="/images/sketch-2.JPG">
@@ -104,8 +109,6 @@
             <img class = "sketch-image" src="/images/sketch-4.JPG">
             <img class = "sketch-image" src="/images/sketch-5.JPG">
             <img class = "sketch-image" src="/images/sketch-6.JPG">
-        </div>
-        <div class = "art-container">
             <img class = "sketch-image" src="/images/sketch-7.JPG">
             <img class = "sketch-image" src="/images/sketch-8.JPG">
             <img class = "sketch-image" src="/images/sketch-9.JPG">
@@ -115,12 +118,51 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id = "artv2">
+        <div class = "art-title-container">
+            <div class="section-title">some art</div>
+            <p class = "section-red">click or drag to flip page</p>
+        </div>
+    </section>
+
+    <section id="contact-me">
         <div class="section-title">contact</div>
-        
+        <div id="contact-container">
+            <div id = "contact-text">
+                <img src="">
+            </div>
+            <div id = "contact-form">
+                <div class="contact-sub">let's talk! shoot me an email or connect with me on LinkedIn. i'm open to all inquiries.</div>
+                <form action="https://api.web3forms.com/submit"  method="POST">
+                    <input type="hidden" name="access_key" value="942b449e-8a25-48d1-912a-d891193f6110">
+                    name:
+                    <input  type="text" name="name" required>
+                    email:
+                    <input  type="email" name="email" required>
+                    message:
+                    <textarea  name="message" required></textarea>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <button class = "form-button" type="submit">send</button>
+                </form>
+            </div>
+        </div>
 
     </section>
+
+    <!-- <section id="contact">
+        <div class = "shadow"></div>
+        <div id = "contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="942b449e-8a25-48d1-912a-d891193f6110">
+                <input placeholder="name" type="text" name="name" required>
+                <input placeholder="email" type="email" name="email" required>
+                <textarea placeholder="message" name="message" required></textarea>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <button class = "form-button" type="submit">send</button>
+            </form>
+        </div>
+    </section> -->
+
     <div class = "cursor"></div>
-    <script src = "js/script.js"></script>
 </body>
 </html>
