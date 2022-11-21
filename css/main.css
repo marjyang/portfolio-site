@@ -8,7 +8,7 @@ body{
 
     margin:0;
     background-color: white;
-    cursor: none;
+    /* cursor: none; */
 }
 
 .fade{
@@ -291,7 +291,7 @@ textarea {
 }
 
 input:hover, textarea:hover {
-    cursor: none;
+    /* cursor: none; */
 }
 
 .form-button { 
@@ -315,30 +315,6 @@ input:hover, textarea:hover {
     border: 2px solid red;
 } 
 
-
-/* ------------ cursor ------------ */
-
-.cursor{
-    width: 15px;
-    height: 15px;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    transition-duration: 10ms;
-    transition-timing-function: ease-out;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transform-origin: 100% 100%;
-    transition: all 0.1s ease;
-    transition-property: scale;
-    z-index:1000;
-}
-
-.link-change{
-    z-index: 10000; 
-    scale: 0.7;
-}
-
 /* ------------ links ------------ */
 a{
     color: red;
@@ -347,7 +323,7 @@ a{
 
 a:hover{
     color: rgb(255, 163, 163);
-    cursor: none;
+    /* cursor: none; */
 }
 
 ::selection {
