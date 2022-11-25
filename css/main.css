@@ -290,9 +290,6 @@ textarea {
     height: 200px; resize: none; 
 }
 
-input:hover, textarea:hover {
-    /* cursor: none; */
-}
 
 .form-button { 
     width: 100px;
@@ -305,7 +302,7 @@ input:hover, textarea:hover {
     border: none;
     height: 30px;
     border-radius: 5px;
-    cursor: none;
+    /* cursor: none; */
     transition: all 0.25s;
 }
 .form-button:hover{
