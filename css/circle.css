@@ -1,10 +1,8 @@
 /* ------------ circle text on main page ------------ */
 .circle-body{
-    /* background-color: rgb(224, 218, 201); */
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    cursor: none;
 }
 
 @keyframes fadeInAnimation {
@@ -19,7 +17,6 @@
 *{
     box-sizing: border-box;
 }
-
 .text-box{
     position: relative;
     display: flex;
@@ -29,8 +26,18 @@
     overflow: hidden;
 }
 
+/* .text-box{
+    position: absolute;
+    z-index: -100000;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100vh;
+} */
+
 .text-box .text{
     position: absolute;
+    color: rgba(159, 167, 255, 0.577);
     color: rgb(255, 163, 163);
     font-size: 20px;
     user-select: none;
