@@ -16,50 +16,14 @@ for (let i = 0; i < links.length; i++){
     });
 }
 
+//flipbook
 
 
-// take user back to top
-const buttonToTop = document.querySelector('#scrollToTop');
-
-buttonToTop.addEventListener('click', () =>{
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-});
+//contentful cms api
 
 
-//heyzine api
-
-
-
-// //lightbox
-
-// Create a lightbox
-// (function() {
-//     var $lightbox = $("<div class='lightbox'></div>");
-//     var $img = $("<img>");
-  
-//     // Add image and caption to lightbox
-//     $lightbox
-//       .append($img)
-  
-//     // Add lighbox to document
-//     $('body').append($lightbox);
-//     $('.art-container img').click(function(e) {
-//       e.preventDefault();
-  
-//       // Get image link and description
-//       var src = $(this).attr("data-image-hd");
-  
-//       // Add data to lighbox
-  
-//       $img.attr('src', src);
-  
-//       // Show lightbox
-  
-//       $lightbox.fadeIn('fast');
-  
-//       $lightbox.click(function() {
-//         $lightbox.fadeOut('fast');
-//       });
-//     });
-  
-//   }());
+//loader
+var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display= "none";
+    })
