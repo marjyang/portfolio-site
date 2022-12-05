@@ -7,6 +7,8 @@
     --grey--c: #eaeaea;
     --accent--c: #b6d844;
     --highlight--c: #ebffa9;
+    --highlight--ct: #ebffa9d4;
+    --accent--ct: #b6d844e9;
 }
 
 html {
@@ -183,7 +185,7 @@ nav a:target{
     width: 100%;
     height: 100%;
     color: black;
-    background: var(--beige--ct);
+    background: var(--beige--c);
     display: flex;
     flex-direction: column;
     opacity: 1;
