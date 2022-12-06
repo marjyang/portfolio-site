@@ -70,15 +70,15 @@ nav a:target{
 }
 
 /* ------------ deco circles section ------------ */
-.background-circles{
+/* .background-circles{
     top:50%;
     left:50%;
     transform: translate(50%,50%);
-}
+} */
 .container {
     padding-top: 50px;
     width: 100%;
-    height: 100vh;
+    height: 20vh;
     overflow: hidden;
     position: absolute;
     z-index: -10000;
@@ -95,13 +95,13 @@ nav a:target{
     position: relative;
     border-radius: 50%;
     padding-top: 100%;
-    border: 1px solid var(--accent--c);
+    /* border: 1px solid black; */
   }
 
 /* ------------ header section ------------ */
 .introduction-container{
     display: flex;
-    height: 100vh;
+    height: 60vh;
     flex-direction: column;
     align-items: flex-start;
     /* justify-content: center; */
@@ -113,17 +113,64 @@ nav a:target{
 }
 
 .intro-sub{
-    margin: 15px 0 0 0 ;
+    margin: 15px 0 15px 0 ;
     font-size: 22px;
     color: var(--green--c);
 }
 
+.pushable-btn{
+    display:table-cell;
+    vertical-align: middle;
+    margin: 0 5px 0 0px;
+}
+
 .more-about-me{
-    text-align: right;
-    color: var(--green--c);
-    font-weight: 500;
-    font-size: 28px;
-    margin-top: 15px;
+    text-align: center;
+    text-decoration:none;
+    color:#000;
+    margin:auto;
+    width:230px;
+    display:inline-block;
+    line-height:40px;
+    font-size:28px;
+    font-weight:400;
+    /* letter-spacing:1px; */
+    text-transform:lowercase;
+    background-color: #fff;
+    border:3px solid black;
+    box-shadow:-1px 1px 0, -2px 2px 0, -3px 3px 0, -4px 4px 0,-5px 5px 0;
+    position: relative;
+}
+
+.more-about-me:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    background-color: #fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.more-about-me:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.more-about-me:hover:after{
+
+}
+  
+.more-about-me:active{
+    top:5px;
+    left:-5px;
+    box-shadow:0 0 0 0;
 }
 
 .deco-circle{
@@ -147,7 +194,7 @@ nav a:target{
 }
 
 .section-title{
-    font-size: 32px;
+    font-size: 36px;
     margin: 10px 20px 10px 20px;
 }
 
@@ -159,7 +206,7 @@ nav a:target{
 .projects-container{
     display:flex;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .image{
@@ -185,11 +232,13 @@ nav a:target{
     width: 100%;
     height: 100%;
     color: black;
-    background: var(--beige--c);
+    background: var(--beige--ct);
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     opacity: 1;
     transition: all 0.25s;
+    /* backdrop-filter: grayscale(); */
 }
 
 .image-overlay:hover{
@@ -207,18 +256,11 @@ nav a:target{
     font-size: 17px;
     margin: 0 20px 0 20px;
 }
- 
-/* ------------ art ------------ */
-
-.art-title-container{
-    display: flex;
-    align-items: flex-end;
-    margin-top: 20px;
-}
 
 /* ------------ contact-me ------------ */
-#contact{
-    padding-top: 50px;
+#contact-me{
+    /* padding-top: 50px; */
+    height: 90vh;
 }
 .contact-sub{
     font-size: 24px;
@@ -396,4 +438,33 @@ a:hover{
     height: 50px;
     width: auto;
     transition: all 0.3s;
+}
+
+
+/* ------------ art ------------ */
+
+.art-title-container{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.art-sub{
+    margin: 10px 0 15px 0;
+    color: var(--green--c);
+    font-size:20px;
+}
+
+.art-container{
+
+}
+
+.flipbook-container{
+
+}
+
+.flipbook-template{
+    height: 400px;
+    width: auto;
+    margin: 0 100px 0 100px;
 }
