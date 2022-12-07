@@ -1,6 +1,6 @@
 :root{
-    --green--c: #00a5f1;
-    /* --green--c: #27857F; */
+    /* --green--c: #00a5f1; */
+    --green--c: #27857F;
     --beige--c: #F6F2E7;
     --white--c: #ffffff;
     --beige--ct: #f1ede4e9;
@@ -69,6 +69,7 @@ section {
 nav a:target{
     font-weight: 500;
 }
+
 
 /* ------------ deco circles section ------------ */
 /* .background-circles{
@@ -444,6 +445,10 @@ a:hover{
 
 /* ------------ art ------------ */
 
+#art:after{
+    /* z-index: 10000000; */
+}
+
 .art-title-container{
     display: flex;
     align-items: flex-end;
@@ -469,3 +474,5 @@ a:hover{
     width: auto;
     margin: 0 100px 0 100px;
 }
+
+

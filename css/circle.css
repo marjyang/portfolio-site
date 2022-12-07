@@ -26,18 +26,8 @@
     overflow: hidden;
 }
 
-/* .text-box{
-    position: absolute;
-    z-index: -100000;
-    top: 96%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-height: 100vh;
-} */
-
 .text-box .text{
     position: absolute;
-    color: rgba(159, 167, 255, 0.577);
     color: rgb(255, 163, 163);
     font-size: 20px;
     user-select: none;
@@ -162,3 +152,5 @@
     z-index: 10000; 
     scale: 0.7;
 }
+
+
