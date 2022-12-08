@@ -1,10 +1,10 @@
 :root{
     /* --green--c: #00a5f1; */
     --green--c: #27857F;
+    /* --green--c: #ff0000; */
     --beige--c: #F6F2E7;
     --white--c: #ffffff;
     --beige--ct: #f1ede4e9;
-    --green--ct: #27857F80;
     --grey--c: #eaeaea;
     --accent--c: #b6d844;
     --highlight--c: #ebffa9;
@@ -41,12 +41,6 @@ section {
     min-height: 100vh;
 }
 
-#preloader {
-    height:100vh;
-    width:100%;
-    position:fixed;
-    z-index: 10000000;
-}
 /* ------------ navbar section ------------ */
 #main-nav{
     font-size: 20px;
@@ -72,71 +66,54 @@ nav a:target{
 
 
 /* ------------ deco circles section ------------ */
-/* .background-circles{
-    top:50%;
-    left:50%;
-    transform: translate(50%,50%);
-} */
-.container {
-    padding-top: 50px;
-    width: 100%;
-    height: 20vh;
-    overflow: hidden;
-    position: absolute;
-    z-index: -10000;
-}
-  
-.span-c {
-    width: 12.4%;
-    height: auto;
-    display: inline-block;
-    padding: 20px;
-}
-  
-.circle {
-    position: relative;
-    border-radius: 50%;
-    padding-top: 100%;
-    /* border: 1px solid black; */
-  }
+
+
+
 
 /* ------------ header section ------------ */
-.introduction-container{
+#header{
+    height: 100vh;
     display: flex;
-    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.introduction-container{
+    margin-top: 40px;
+    display: flex;
+    height: 220px;
     flex-direction: column;
     align-items: flex-start;
-    /* justify-content: center; */
-    padding: 150px 40% 0 50px; 
+    justify-content: center;
+    padding: 0px 23% 0 23%; 
 }
 
 .intro-head{
     font-size: 32px;
+    padding: 0 0% 0 0;
 }
 
 .intro-sub{
-    margin: 15px 0 15px 0 ;
     font-size: 22px;
     color: var(--green--c);
+    padding: 15px 0% 0 0%;
 }
 
-.pushable-btn{
-    display:table-cell;
-    vertical-align: middle;
-    margin: 0 5px 0 0px;
+.pushable{
+    margin: 0 50% 0 60%;
 }
 
 .more-about-me{
     text-align: center;
     text-decoration:none;
-    color:#000;
-    margin:auto;
+    color:black;
+    /* margin:auto; */
     width:230px;
     display:inline-block;
     line-height:40px;
     font-size:28px;
-    font-weight:400;
-    /* letter-spacing:1px; */
+    font-weight:500;
     text-transform:lowercase;
     background-color: #fff;
     border:3px solid black;
@@ -163,11 +140,12 @@ nav a:target{
 .more-about-me:hover{
     background-color: transparent;
     color: black;
+    border:3px solid black;
 }
 
-.more-about-me:hover:after{
+/* .more-about-me:hover:after{
 
-}
+} */
   
 .more-about-me:active{
     top:5px;
@@ -177,12 +155,13 @@ nav a:target{
 
 .deco-circle{
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 360px;
+    height: 360px;
     border-radius: 50%;
-    top:35%;
-    left:70%;
+    top:18%;
+    left:54%;
     z-index: -1;
+    background-color: var(--beige--c);
 }
 
 /* ------------ work section ------------ */
@@ -388,7 +367,7 @@ a:hover{
 }
 .about-sub{
     font-size: 30px;
-    color: var(--green--c);
+    color: var(--accent--c);
     margin: 15px 0 0 25px;
 }
 
@@ -399,8 +378,13 @@ a:hover{
 .list-items{
     list-style: none;
     font-size: 18px;
-    margin: 10px 15px 0 0;
+    margin: 15px 0px 0 0;
     /* text-transform: uppercase; */
+}
+
+li::before {
+    content: "+   "; 
+    color: black;
 }
 
 .about-img{
@@ -457,7 +441,7 @@ a:hover{
 
 .art-sub{
     margin: 10px 0 15px 0;
-    color: var(--green--c);
+    color: var(--accent--c);
     font-size:20px;
 }
 
@@ -470,9 +454,50 @@ a:hover{
 }
 
 .flipbook-template{
-    height: 400px;
+    position: absolute;
+    height: 480px;
     width: auto;
-    margin: 0 100px 0 100px;
+    /* margin: 0 100px 0 200px; */
+    transform:translate(12rem, 13vh);
+    z-index: -10;
+    
 }
 
 
+/* ------------ table bg ------------ */
+
+.table-line1{
+    position: absolute;
+    z-index: -1;
+    height: 200vh;
+    width: 1px;
+    background-color: black;
+    transform: translate(12rem, -7vh);
+}
+
+.table-line2{
+    position: absolute;
+    z-index: -1;
+    height: 200vh;
+    width: 1px;
+    background-color: black;
+    transform: translate(50rem, -7vh);
+}
+
+.table-line3{
+    position: absolute;
+    z-index: -1;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    transform: translate(0, 20vh);
+}
+
+.table-line4{
+    position: absolute;
+    z-index: -1;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    transform: translate(0, 78vh);
+}
