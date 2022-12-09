@@ -1,0 +1,151 @@
+.art-title-container{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    padding: 45px 0 0 0;
+}
+
+#back-button{
+    position: absolute;
+    width: 240px;
+    height: 375px;
+    transform: translate(253px, 12.8vh);
+    z-index: 100;
+    user-select: none;
+}
+
+#forward-button{
+    position: absolute;
+    width: 240px;
+    height: 375px;
+    transform: translate(495px, 13.2vh);
+    z-index: 100;
+    user-select: none;
+}
+  
+.art-sub{
+    margin: 10px 0 15px 0;
+    color: var(--green-c);
+    font-size:20px;
+}
+  
+.flipbook-template{
+    position: absolute;
+    height: 480px;
+    width: auto;
+    transform:translate(195px, 8vh);
+    z-index: -10;   
+    user-select: none;
+}
+  
+#flipbook img{
+    position: absolute;
+    width: 240px;
+    height: 375px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    user-select: none;
+}
+
+#flipbook p{
+    position: absolute;
+    padding: 0 200px 0 870px;
+}
+
+#page1{
+    display: none;
+}
+
+#page2 {
+    display: none;
+}
+
+#page3 {
+    display: none;
+}
+
+#page4 {
+    display: none;
+}
+
+#page5 {
+    display: none;
+}
+
+#page6 {
+    display: none;
+}
+
+#page7 {
+    display: none;
+}
+
+#page8 {
+    display: none;
+}
+
+#page9 {
+    display: none;
+}
+
+#page10 {
+    display: none;
+}
+
+#page11 {
+    display: none;
+}
+
+#page12 {
+    display: none;
+}
+
+
+.left-arrow{
+    position: absolute;
+    transform: translate(870px, 135px);
+}
+  
+  .right-arrow{
+    position: absolute;
+    transform: translate(1140px, 280px);
+}
+  
+  /* ------------ table bg ------------ */
+  
+.table-line1{
+    position: absolute;
+    z-index: -1;
+    height: 200vh;
+    width: 1px;
+    background-color: black;
+    transform: translate(12rem, -7vh);
+}
+  
+.table-line2{
+    position: absolute;
+    z-index: -1;
+    height: 200vh;
+    width: 1px;
+    background-color: black;
+    transform: translate(50rem, -7vh);
+}
+  
+.table-line3{
+    position: absolute;
+    z-index: -1;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    transform: translate(0, 20vh);
+}
+  
+.table-line4{
+    position: absolute;
+    z-index: -1;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    transform: translate(0, 78vh);
+}
+  
