@@ -52,54 +52,10 @@
     padding: 0 200px 0 870px;
 }
 
-#page1{
+#page1, #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9, #page10, #page11, #page12{
     display: none;
+    transition: all 750ms ease-in-out;
 }
-
-#page2 {
-    display: none;
-}
-
-#page3 {
-    display: none;
-}
-
-#page4 {
-    display: none;
-}
-
-#page5 {
-    display: none;
-}
-
-#page6 {
-    display: none;
-}
-
-#page7 {
-    display: none;
-}
-
-#page8 {
-    display: none;
-}
-
-#page9 {
-    display: none;
-}
-
-#page10 {
-    display: none;
-}
-
-#page11 {
-    display: none;
-}
-
-#page12 {
-    display: none;
-}
-
 
 .left-arrow{
     position: absolute;

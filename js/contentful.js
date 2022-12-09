@@ -5,15 +5,24 @@ var client = contentful.createClient({
 
 client.getEntries().then((entries) =>{
 
-    let blog = document.getElementById('blog');
+    let project1 = document.getElementById('project1');
+    let project2 = document.getElementById('project2');
+    let project3 = document.getElementById('project3');
+    let project4 = document.getElementById('project4');
+
 
     entries.items.forEach((entry) => {
         let html = `
             <h1>${entry.fields.title}</h1>
-            <img class='blog-img' src='${entry.fields.image.fields.file.url}'>
+            <img class='img' src='${entry.fields.image.fields.file.url}'>
             <p>${entry.fields.body}</p>
         `;
-        blog.innerHTML += html;
+        
+        project1.innerHTML = html;
+        project2.innerHTML = html;
+        project3.innerHTML = html;
+        project4.innerHTML = html;
+
     });
 });
 

@@ -35,6 +35,7 @@ backBtn.addEventListener("click", () =>{
 function loadImage(){
     let flipbook = document.getElementById("flipbook");
     let images = flipbook.querySelectorAll("div");
+
     for (let i = 0; i < images.length; i++){
         images[i].style.display = "none";
     }
@@ -62,6 +63,7 @@ function loadImage(){
     }else{
         leftPage.style.display = "none";
         rightPage.style.display = "none";
+
         isShowing = false;
     }
 }

@@ -10,7 +10,8 @@
     --highlight-c: #ebffa9;
     --highlight-ct: #ebffa9d4;
     --accent-ct: #b6d844e9;
-    --orange-c: #f1f3ff;
+    --blue-c: #8dbbff;
+    --orange-c: #f0f2ff;
 }
 
 
@@ -156,7 +157,7 @@ nav a:hover{
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    top:18%;
+    top:20%;
     left:54%;
     z-index: -1;
     background-color: var(--orange-c);
@@ -199,9 +200,13 @@ nav a:hover{
     background: white;
 }
 
-.section-red{
+.section-green{
     color: var(--green-c);
     background-color: var(--white-c);
+}
+
+.section-blue{
+    color: var(--blue-c);
 }
 
 .projects-container{
@@ -366,6 +371,7 @@ a:hover{
     align-items: center;
     margin: 50px 25px 0 0;
 }
+
 .container-all{
     display: flex;
     flex-direction: column;
@@ -387,7 +393,7 @@ a:hover{
 }
 .about-sub{
     font-size: 30px;
-    color: var(--accent-c);
+    color: var(--blue-c);
     margin: 15px 0 0 25px;
 }
 
