@@ -20,25 +20,24 @@ client.getEntries().then((entries) =>{
 
     let html = [];
     let covers = [];
-    let filteredHtml = [];
-    let filteredCovers = [];
 
     entries.items.forEach((entry) => {
-        html[entry] = `
-            <h1>${entry.fields.title}</h1>
-            <div class = "indiv-medium">${entry.fields.medium}</div>
-            <div class = "indiv-role">${entry.fields.role}</div>
-        `;
         
         covers[entry] = `
             <div class="image">
                 <img class ="image-img" src=${entry.fields.thumbnailImage.fields.file.url}>
                 <div class = "image-overlay image-overlay-blur">
-                    <div class="image-title">${entry.fields.title}</div>
-                    <p class = "image-desc">${entry.fields.medium}</p>
-                    <p class = "image-desc">${entry.fields.role}</p>
+                    <div class="cover-title">${entry.fields.title}</div>
+                    <p class = "cover-medium">${entry.fields.medium}</p>
+                    <p class = "cover-role">${entry.fields.role}</p>
                 </div>
             </div>
+        `;
+
+        html[entry] = `
+            <div class = indiv-title>${entry.fields.title}</div>
+            <div class = "indiv-medium">${entry.fields.medium}</div>
+            <div class = "indiv-role">${entry.fields.role}</div>
         `;
         
         console.log(entry.fields);
@@ -62,6 +61,21 @@ client.getEntries().then((entries) =>{
 
 });
 
+
+let medium = document.getElementsByClassName("indiv-medium");
+let role = document.getElementsByClassName("indiv-role");
+
+let coverMedium = document.getElementsByClassName("cover-medium");
+let coverRole = document.getElementsByClassName("cover-role");
+
+function filterUndefined(){
+    if (medium.innerHTML == "undefined"){
+        medium.style.display = "none";
+    }
+    if (coverMedium.innerHTML == "undefined"){
+        coverMedium.style.display = "none";
+    }
+}
 
 {/* <img class = "indiv-main-image" src="${entry.fields.mainImage.fields.file.url}">
 <video width="320" height="240" autoplay muted>

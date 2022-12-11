@@ -1,137 +1,178 @@
-/* ------------ page resizing: tablet screens (Surface Pro 7) ------------ */
+:root{
+    /* --green--c: #00a5f1; */
+    --green-c: #27857F;
+    /* --green-c: #ff0000; */
+    --beige-c: #F6F2E7;
+    --white-c: #ffffff;
+    --beige-ct: #F6F2E7e9;
+    --grey-c: #eaeaea;
+    --accent-c: #b6d844;
+    --highlight-c: #ebffa9;
+    --highlight-ct: #ebffa9d4;
+    --accent-ct: #b6d844e9;
+    --blue-c: #8dbbff;
+    --orange-c: #f0f2ff;
+}
+
+/* ------------ for phone ------------ */
 @media screen and (max-width: 912px){
-    .menu-item{
-        font-size: 14px;
-    }
 
-    .medium-container .title{
-        font-size: 65px;
-        margin: 0 10% 5% 10%;
-    }
-    .medium-container .text{
-        text-align: center;
-        margin: 0 10% 0 10%;
-    }
-
-    .about-me-title{
-        font-size: 60px;
-        margin-top: 40px;
-    }
-
-    .about-me-container{
-        flex-direction: row;
-        padding: 0 15% 0 15%;
-        height: 100vh;
-        justify-content: center;
-    }
-    .about-me-container .image{
-        width: 250px;
-        height: 400px;
-        object-fit: cover;
-    }
-
-    .about-me-container .text{
-        font-size: 14px;
-    }
-
-    .message-button{
-        margin-bottom: 20%;
-    }
-
-    .im-container{
-        margin-top: 10%;
-    }
-
-    .im-visualizer-container{
-        margin: 30% 8% 5% 8%;
-    }
-    .im-visualizer-container .video-container{
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    .im-visualizer-container .video{
-        flex-direction: column;
-        margin: 0px;
-    }
 }
 
-/* ------------ page resizing: mobile screens (iPhone XR) ------------ */
+/* ------------ for iPhone XR ------------ */
+
 @media screen and (max-width: 414px){
-    .menu-item{
-        font-size: 12px;
-        padding:0 2% 0 2%;
+
+    /* navbar */
+    #main-nav {
+        background: var(--white-c);
+        padding: 5px;
+        text-align: center;
+        width: 40%;
+        position: fixed;
+        box-sizing: border-box;
+        height: 45px;
+        border: 2px solid var(--green-c);
+        border-radius: 15px;
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%, 0%);
+        display: flex;
+        justify-content: space-between;
+        z-index: 100;
     }
 
-    .medium-container .title{
-        text-align: left;
-        font-size: 50px;
-        margin: 0 10% 5% 10%;
-    }
-    .medium-container .text{
-        text-align: right;
-        margin: 0 10% 0 10%;
+    nav a {
+        color: var(--green-c);
+        text-decoration: none;
+        margin: 0px 10px;
+        padding: 5px;
     }
 
-    .about-me-title{
-        font-size: 50px;
-        margin-top: 40px;
+    /* header */
+    .introduction-container{
+        display: flex;
+        height: 100px;
+        padding: 0px 10% 0 10%; 
     }
-    .about-me-container{
-        flex-direction: column;
-        padding: 0 5% 0 5%;
+
+    .intro-head{
+        font-size: 28px;
+    }
+
+    .intro-sub{
+        font-size: 16px;
+        color: var(--green-c);
+        padding: 15px 0% 0 0%;
+    }
+
+    .pushable{
+        margin: 120px 0 0 65%;
+    }
+
+    .more-about-me{
+        text-align: center;
+        text-decoration:none;
+        color:black;
+        width:100px;
+        display:inline-block;
+        line-height:40px;
+        font-size:24px;
+        font-weight:500;
+        text-transform:lowercase;
+        background-color: #fff;
+        border:3px solid black;
+        box-shadow:-1px 1px 0, -2px 2px 0, -3px 3px 0, -4px 4px 0,-5px 5px 0;
+        position: relative;
+    }
+
+    .more-about-me:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width:100%;
+        z-index: -1;
+        background-color: #fff;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+    }
+
+    .more-about-me:active{
+        top:5px;
+        left:-5px;
+        box-shadow:0 0 0 0;
+    }
+
+    .deco-circle{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        top:15%;
+        left:50%;
+        z-index: -1;
+        background-color: var(--orange-c);
+    }
+
+    /* work */
+    #work{
+        padding-top:20px;
+    }
+
+    .work-title {
+        display: flex;
+        justify-content: space-between;
+        user-select: none;
+        margin:  10px 10px 10px;
+        font-size: 20px;
+    }
+
+    /* contact */
+    
+    #contact-container{
+        display: flex;
+        flex-direction: row;
+        align-items: space-around;
+    }
+    .contact-sub{
+        font-size: 24px;
+        margin:1em 5px 2em 5px;
+    }
+    #contact-space{
+        flex: 1 0 0%;
+    }
+
+    .envelope-img{
+        display: none;
+    }
+
+    .envelope-img:hover{
+        display: none;
+    }
+
+    #contact-form{
         height: 80vh;
-        align-items: center;
+        border-radius: 10px;
     }
-    .about-me-container .text{
-        padding: 0;
-        font-size: 14px;
+    
+    input, textarea { 
+        margin: 0.4em auto;
+        font-family: inherit; 
+        font-size: inherit;
+        display: block; 
+        width: 96%; 
+        padding: .4em;
+        border-radius: 10px;
+        border: 1px solid black;
+        background: var(--grey-c);
     }
-    .about-me-container .image{
-        width: 400px;
-        height: 300px;
-        object-fit: cover;
+    textarea {
+        height: 280px; resize: none; 
     }
-
-    .message-button{
-        margin-bottom: 20%;
-    }
-
-
+    
 }
-
-/* ------------ main nav section for phone ------------
-#main-nav {
-    background: var(--white--c);
-    padding: 5px;
-    text-align: center;
-    width: 40%;
-    position: fixed;
-    box-sizing: border-box;
-    height: 45px;
-    border: 2px solid var(--green--c);
-    border-radius: 15px;
-    left: 50%;
-    top:90%;
-    transform: translate(-50%, 0%);
-    display: flex;
-    justify-content: space-between;
-    z-index: 100;
-}
-
-nav a {
-    color: var(--green--c);
-    text-decoration: none;
-    margin: 0px 10px;
-    padding: 5px;
-  }
-
-nav a.active {
-    color: #1e1e1e;
-    background: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-   */
