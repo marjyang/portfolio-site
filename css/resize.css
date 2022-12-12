@@ -14,8 +14,21 @@
     --orange-c: #f0f2ff;
 }
 
-/* ------------ for phone ------------ */
+/* ------------ for tablet ------------ */
 @media screen and (max-width: 912px){
+
+    /* art */
+    .table-line1 {
+        height: 150vh;
+    }
+
+    .table-line2 {
+        height: 150vh;
+    }
+
+    
+    /* contact */
+
 
 }
 
@@ -28,7 +41,7 @@
         background: var(--white-c);
         padding: 5px;
         text-align: center;
-        width: 40%;
+        width: 80%;
         position: fixed;
         box-sizing: border-box;
         height: 45px;
@@ -131,6 +144,11 @@
         margin:  10px 10px 10px;
         font-size: 20px;
     }
+    
+
+
+
+
 
     /* contact */
     
@@ -175,4 +193,10 @@
         height: 280px; resize: none; 
     }
     
+    /* art */
+    .table-line1, .table-line2, .table-line3, .table-line4{
+        display:none;
+    }
+      
+
 }
