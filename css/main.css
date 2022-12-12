@@ -20,6 +20,7 @@ html, body{
     font-weight: 300;
     margin:0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 b{
@@ -165,7 +166,8 @@ nav a:hover{
     top:20%;
     left:54%;
     z-index: -1;
-    background-color: var(--orange-c);
+    background-color: var(--orange-c); 
+    /* overflow: hidden; */
 }
 
 /* ------------ for the rest of the sections ------------ */
@@ -224,12 +226,10 @@ nav a:hover{
     height: 100%;
     color: black;
     background: var(--beige-ct);
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     opacity: 1;
     transition: all 0.25s;
-    /* backdrop-filter: grayscale(); */
 }
 
 .image-overlay:hover{
@@ -440,7 +440,6 @@ textarea {
     width: auto;
     transition: all 0.3s;
 }
-
 
 
 

@@ -64,9 +64,6 @@
         width: auto;
         transition: all 0.3s;
     }
-
-
-
 }
 
 /* ------------ for tablet ------------ */
@@ -95,6 +92,11 @@
 
     .table-line2 {
         height: 150vh;
+    }
+
+    /* work */
+    .work-title {
+        font-size: 26px;
     }
 
     /* about-me */
@@ -138,7 +140,10 @@
 }
 
 
-/* ------------ for 620 ------------ */
+
+
+
+/* ------------ for 620 cuz the sketchbook looks awkward here ------------ */
 
 @media screen and (max-width: 620px){
     
@@ -157,6 +162,7 @@
     }
 
     .introduction-container{
+        margin-top: 40px;
         display: flex;
         height: 100px;
         padding: 150px 20% 0 20%; 
@@ -169,8 +175,30 @@
     .intro-sub{
         font-size: 18px;
         color: var(--green-c);
-        padding: 15px 0% 0 0%;
+        padding: 0px 0% 0 0%;
     }
+
+    /* work */
+
+    .work-title {
+        font-size: 22px;
+    }
+
+    .projects-container{
+        align-items: center;
+        justify-content: space-between;
+        height:95vh;
+        flex-direction: column;
+        margin: 0 0 20px 0;  
+    }
+
+    .image{
+        position: relative;
+        width: 90vw;
+        height: 30vh;
+        overflow: hidden;
+    }
+
 
     /* art */
     #art{
@@ -182,10 +210,16 @@
     }
 
     #contact-me{
+        height: 58vh;
         margin-top: 80px;
-        margin-bottom: 100px;
+        margin-bottom: 270px;
     }
 
+    .contact-sub{
+        font-size: 22px;
+        margin:1em 0 2em 0;
+    }
+    
     .envelope-img{
         display: none;
     }
@@ -203,12 +237,13 @@
         font-size: 24px;
         margin:1em 5px 2em 5px;
     }
+
     #contact-space{
         flex: 1 0 0%;
     }
 
     #contact-form{
-        height: 80vh;
+        height: 60vh;
         border-radius: 10px;
     }
     
@@ -225,9 +260,12 @@
     }
     
     textarea {
-        height: 280px; resize: none; 
+        height: 200px; resize: none; 
     }
 }
+
+
+
 
 
 /* ------------ for iPhone XR ------------ */
@@ -261,10 +299,14 @@
     }
 
     /* header */
+    #header{
+        height: 100vh;
+    }
+
     .introduction-container{
         display: flex;
         height: 100px;
-        padding: 0px 20% 0 20%; 
+        padding: 120px 15% 0 15%; 
     }
 
     .intro-head{
@@ -274,11 +316,11 @@
     .intro-sub{
         font-size: 16px;
         color: var(--green-c);
-        padding: 80px 0% 0 0%;
+        padding: 10px 0% 0 0%;
     }
 
     .pushable{
-        margin: 140px 0 0 65%;
+        margin: 120px 0 0 65%;
     }
 
     .more-about-me{
@@ -295,12 +337,8 @@
     #work{
         padding-top:20px;
     }
-
+    
     .work-title {
-        display: flex;
-        justify-content: space-between;
-        user-select: none;
-        margin:  10px 10px 10px;
         font-size: 20px;
     }
     
@@ -317,8 +355,11 @@
         font-size: 14px;
     }
 
-    /* contact */
 
+    /* contact */
+    textarea {
+        height: 100px; resize: none; 
+    }
     
     /* art */
     .table-line1, .table-line2, .table-line3, .table-line4{
@@ -337,8 +378,8 @@
     .currently{
         display: none;
     }
+
     .container-section-3h{
         display: none;
     }
-
 }
