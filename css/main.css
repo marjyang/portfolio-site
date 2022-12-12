@@ -53,7 +53,6 @@ a{
 
 a:hover{
     color: var(--accent-c);
-    /* cursor: none; */
 }
 
 ::selection {
@@ -242,8 +241,8 @@ nav a:hover{
     font-weight: 400;
     float:left;
     margin: 20px 20px 0 20px;
-
 }
+
 .cover-role{
     font-size: 17px;
     margin: 0 20px 0 20px;
@@ -252,6 +251,7 @@ nav a:hover{
 .cover-medium{
     font-size: 17px;
     margin: 0 20px 0 20px;
+    
 }
 
 /* ------------ contact-me ------------ */
@@ -285,7 +285,7 @@ nav a:hover{
 .envelope-img:hover{
     content:url("/images/opened-envelope.png");
     width: 220px;
-    margin-top: 120px;
+    margin-top: 180px;
 }
 
 #contact-form{
@@ -440,4 +440,14 @@ textarea {
     width: auto;
     transition: all 0.3s;
 }
+
+
+
+
+
+
+
+
+
+
 

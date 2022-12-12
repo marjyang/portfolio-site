@@ -1,7 +1,10 @@
+#art{
+    height: 100vh;
+}
+
 .art-title-container{
     display: flex;
     align-items: flex-end;
-    /* margin-top: 20px; */
     padding: 45px 0 0 0;
 }
 
@@ -32,8 +35,8 @@
 .flipbook-template{
     position: absolute;
     height: auto;
-    width: 37.5%;
-    transform:translate(15.4vw, 91px);
+    width: 37.8%;
+    transform:translate(15.6vw, 89px);
     z-index: -10;
     user-select: none;
 }
@@ -44,7 +47,6 @@
     height: 24.8vw;
     object-fit: cover;
 }
-
 
 #flipbook img{
     width: 100%;
@@ -57,7 +59,7 @@
 #flipbook p{
     position: absolute;
     margin: 0 0 0 40%;
-    padding: 0 20% 0 0%;
+    padding: 0 30% 0 0%;
 }
 
 .left-img{
@@ -69,11 +71,11 @@
 }
 
 .left-desc{
-    transform:translate(20vw, 14vw);
+    transform:translate(18vw, 14vw);
 }
 
 .right-desc{
-    transform:translate(30vw, 24vw);
+    transform:translate(23vw, 24vw);
 }
 
 #page1, #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9, #page10, #page11, #page12{
@@ -130,6 +132,8 @@
     height: 1px;
     width: 100%;
     background-color: black;
-    transform: translate(0, 41.5vw);
+    top: 218%;
+    transform: translate(0, 28vw);
+
 }
   

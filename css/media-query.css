@@ -20,7 +20,20 @@
     
     /* header */
     .pushable{
-        margin: 50px 30% 0 53%;
+        margin: 100px 30% 0 60%;
+    }
+
+    /* contact */
+    #contact-space{
+        flex: 1 0 30%;
+    }
+
+    .envelope-img{
+        width: 200px;
+    }
+
+    .envelope-img:hover{
+        width: 180px;
     }
 
     /* about-me */
@@ -52,10 +65,28 @@
         transition: all 0.3s;
     }
 
+
+
 }
 
 /* ------------ for tablet ------------ */
 @media screen and (max-width: 912px){
+
+    /* header */
+    .pushable{
+        margin: 130px 30% 0 50%;
+    }
+
+    .intro-head{
+        font-size: 30px;
+    }
+
+    .intro-sub{
+        font-size: 20px;
+        color: var(--green-c);
+        padding: 15px 0% 0 0%;
+    }
+
 
     /* art */
     .table-line1 {
@@ -65,8 +96,6 @@
     .table-line2 {
         height: 150vh;
     }
-
-    /* contact */
 
     /* about-me */
     .about-desc{
@@ -108,57 +137,15 @@
     }
 }
 
-/* ------------ for iPhone XR ------------ */
 
-@media screen and (max-width: 414px){
+/* ------------ for 620 ------------ */
 
-    /* navbar */
-    /* #main-nav {
-        background: var(--white-c);
-        padding: 5px;
-        text-align: center;
-        width: 80%;
-        position: fixed;
-        box-sizing: border-box;
-        height: 45px;
-        border: 2px solid var(--green-c);
-        border-radius: 15px;
-        left: 50%;
-        top: 90%;
-        transform: translate(-50%, 0%);
-        display: flex;
-        justify-content: space-between;
-        z-index: 100;
-    } */
-
-    nav a {
-        color: var(--green-c);
-        text-decoration: none;
-        margin: 0px 10px;
-        padding: 5px;
-    }
-
+@media screen and (max-width: 620px){
+    
     /* header */
-    .introduction-container{
-        display: flex;
-        height: 100px;
-        padding: 0px 10% 0 10%; 
-    }
-
-    .intro-head{
-        font-size: 28px;
-    }
-
-    .intro-sub{
-        font-size: 16px;
-        color: var(--green-c);
-        padding: 15px 0% 0 0%;
-    }
-
     .pushable{
-        margin: 120px 0 0 65%;
+        margin: 140px 30% 0 60%;
     }
-
     .more-about-me{
         text-align: center;
         text-decoration:none;
@@ -167,67 +154,46 @@
         display:inline-block;
         line-height:40px;
         font-size:24px;
-        font-weight:500;
-        text-transform:lowercase;
-        background-color: #fff;
-        border:3px solid black;
-        box-shadow:-1px 1px 0, -2px 2px 0, -3px 3px 0, -4px 4px 0,-5px 5px 0;
-        position: relative;
     }
 
-    .more-about-me:after{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width:100%;
-        z-index: -1;
-        background-color: #fff;
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -o-transition: all 0.5s;
-    }
-
-    .more-about-me:active{
-        top:5px;
-        left:-5px;
-        box-shadow:0 0 0 0;
-    }
-
-    .deco-circle{
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        top:15%;
-        left:50%;
-        z-index: -1;
-        background-color: var(--orange-c);
-    }
-
-    /* work */
-    #work{
-        padding-top:20px;
-    }
-
-    .work-title {
+    .introduction-container{
         display: flex;
-        justify-content: space-between;
-        user-select: none;
-        margin:  10px 10px 10px;
-        font-size: 20px;
+        height: 100px;
+        padding: 150px 20% 0 20%; 
     }
-    
 
+    .intro-head{
+        font-size: 28px;
+    }
 
+    .intro-sub{
+        font-size: 18px;
+        color: var(--green-c);
+        padding: 15px 0% 0 0%;
+    }
 
+    /* art */
+    #art{
+        display:none;
+    }
 
+    .hide-art-menu{
+        display:none;
+    }
 
-    /* contact */
-    
+    #contact-me{
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .envelope-img{
+        display: none;
+    }
+
+    .envelope-img:hover{
+        display: none;
+    }
+
     #contact-container{
         display: flex;
         flex-direction: row;
@@ -239,14 +205,6 @@
     }
     #contact-space{
         flex: 1 0 0%;
-    }
-
-    .envelope-img{
-        display: none;
-    }
-
-    .envelope-img:hover{
-        display: none;
     }
 
     #contact-form{
@@ -265,9 +223,102 @@
         border: 1px solid black;
         background: var(--grey-c);
     }
+    
     textarea {
         height: 280px; resize: none; 
     }
+}
+
+
+/* ------------ for iPhone XR ------------ */
+
+@media screen and (max-width: 414px){
+
+    /* navbar */
+    #main-nav {
+        background: var(--white-c);
+        padding: 5px;
+        text-align: center;
+        width: 80%;
+        position: fixed;
+        box-sizing: border-box;
+        height: 45px;
+        border: 2px solid var(--green-c);
+        border-radius: 15px;
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%, 0%);
+        display: flex;
+        justify-content: space-between;
+        z-index: 100;
+    }
+
+    nav a {
+        color: var(--green-c);
+        text-decoration: none;
+        margin: 0px 10px;
+        padding: 5px;
+    }
+
+    /* header */
+    .introduction-container{
+        display: flex;
+        height: 100px;
+        padding: 0px 20% 0 20%; 
+    }
+
+    .intro-head{
+        font-size: 28px;
+    }
+
+    .intro-sub{
+        font-size: 16px;
+        color: var(--green-c);
+        padding: 80px 0% 0 0%;
+    }
+
+    .pushable{
+        margin: 140px 0 0 65%;
+    }
+
+    .more-about-me{
+        text-align: center;
+        text-decoration:none;
+        color:black;
+        width:100px;
+        display:inline-block;
+        line-height:40px;
+        font-size:24px;
+    }
+
+    /* work */
+    #work{
+        padding-top:20px;
+    }
+
+    .work-title {
+        display: flex;
+        justify-content: space-between;
+        user-select: none;
+        margin:  10px 10px 10px;
+        font-size: 20px;
+    }
+    
+    .cover-title{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .cover-role{
+        display: none;
+    }
+
+    .cover-medium{
+        font-size: 14px;
+    }
+
+    /* contact */
+
     
     /* art */
     .table-line1, .table-line2, .table-line3, .table-line4{
