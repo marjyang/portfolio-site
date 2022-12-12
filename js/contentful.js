@@ -35,10 +35,15 @@ client.getEntries().then((entries) =>{
         `;
 
         html[entry] = `
-            <div class = indiv-title>${entry.fields.title}</div>
-            <div class = "indiv-medium">${entry.fields.medium}</div>
-            <div class = "indiv-role">${entry.fields.role}</div>
-            <div class = "indiv-body">${entry.fields.body}</div>
+            <div class = "indiv-project-container">
+                <div class = indiv-title>${entry.fields.title}</div>
+                <div class = "indiv-medium">${entry.fields.medium}</div>
+                <div class = "indiv-role">${entry.fields.role}</div>
+                <div class = "body-image-container">
+                    <div class = "indiv-body">${entry.fields.body}</div>
+                    <img class = "indiv-thumbnail-image" src=${entry.fields.thumbnailImage.fields.file.url}>
+                </div>
+            </div>
         `;
         
         console.log(entry.fields);
@@ -46,19 +51,19 @@ client.getEntries().then((entries) =>{
         covers.push(covers[entry]);
     });
 
-    projCover1.innerHTML = covers[1];
-    projCover2.innerHTML = covers[0];
-    projCover3.innerHTML = covers[5];
-    projCover4.innerHTML = covers[4];
-    projCover5.innerHTML = covers[3];
-    projCover6.innerHTML = covers[2];
+    projCover1.innerHTML = covers[5];
+    projCover2.innerHTML = covers[4];
+    projCover3.innerHTML = covers[3];
+    projCover4.innerHTML = covers[2];
+    projCover5.innerHTML = covers[1];
+    projCover6.innerHTML = covers[0];
 
-    project1.innerHTML = html[1];
-    project2.innerHTML = html[0];
-    project3.innerHTML = html[5];
-    project4.innerHTML = html[4];
-    project5.innerHTML = html[3];
-    project6.innerHTML = html[2];
+    project1.innerHTML = html[5];
+    project2.innerHTML = html[4];
+    project3.innerHTML = html[3];
+    project4.innerHTML = html[2];
+    project5.innerHTML = html[1];
+    project6.innerHTML = html[0];
 
 });
 

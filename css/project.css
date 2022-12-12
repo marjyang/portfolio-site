@@ -14,10 +14,16 @@
     --orange-c: #f0f2ff;
 }
 
-
-
 .hide-content{
     display:none;
+}
+
+.indiv-project-container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .indiv-title{
@@ -32,5 +38,20 @@
 
 .indiv-role{
     font-size: 20px;
+}
 
+.body-image-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.indiv-body{
+    margin: 20px;
+}
+
+.indiv-thumbnail-image{
+    height: 60vh;
+    width: auto;
+    margin: 20px;
 }
