@@ -199,15 +199,14 @@ nav a:hover{
 
 .projects-container{
     display:flex;
-    justify-content: space-evenly;
-    margin-bottom: 1rem;
+    justify-content: space-between;
+    margin: 0 1vw 1vw 1vw;  
 }
 
 .image{
     position: relative;
-    width: 30em;
-    height: 20em;
-    margin: 0 5px 0 5px;
+    width: 32vw;
+    height: 38vh;
     overflow: hidden;
 }
 
@@ -216,7 +215,6 @@ nav a:hover{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /* background: var(--beige-ct); */
 }
 
 .image-overlay{
@@ -366,7 +364,9 @@ textarea {
 .container-section-2h{
     display: flex;
     flex-direction: row;
+    margin-right: 20px;
 }
+
 .about-sub{
     font-size: 30px;
     color: var(--blue-c);
@@ -389,15 +389,27 @@ textarea {
     color: black;
 }
 
-.about-img{
+.about-img1{
+    object-fit: cover;
+    box-shadow: 0 0 10px var(--green-c);
+    transition: all 0.3s;
+    height: 300px;
+    width: 93%;
+    margin: 25px auto;
+    display:none;
+}
+
+.about-img2{
     height: 500px;
     width: 560px;
     object-fit: cover;
-    margin: 0 25px 0 0;
+    margin: 0 25px 0 25px;
     box-shadow: 0 0 10px var(--green-c);
     transition: all 0.3s;
+    display:block;
 }
-.about-img:hover{
+
+.about-img1:hover, .about-img2:hover{
     box-shadow: 0 0 25px var(--green-c);
 }
 
@@ -408,6 +420,7 @@ textarea {
     margin: 0 25px 0 25px;
     align-items: center;
 }
+
 .currently-per{
     margin: 0 20px 0 0;
     flex: 0 1 18%;

@@ -14,6 +14,46 @@
     --orange-c: #f0f2ff;
 }
 
+/* ------------ for 1300 ------------ */
+
+@media screen and (max-width: 1300px){
+    
+    /* header */
+    .pushable{
+        margin: 50px 30% 0 53%;
+    }
+
+    /* about-me */
+    .about-desc{
+        font-size: 16px;
+    }
+
+    .about-list .list-items{
+        font-size: 16px;
+    }
+
+    .about-img2{
+        height: 500px;
+        width: 30%;
+    }
+
+    .currently-title{
+        font-size: 18px;
+    }
+
+    .currently-desc{
+        font-size: 16px;
+    }
+
+    .currently-img{
+        margin-top: 2px;
+        height: 40px;
+        width: auto;
+        transition: all 0.3s;
+    }
+
+}
+
 /* ------------ for tablet ------------ */
 @media screen and (max-width: 912px){
 
@@ -26,10 +66,46 @@
         height: 150vh;
     }
 
-    
     /* contact */
 
+    /* about-me */
+    .about-desc{
+        font-size: 15px;
+    }
 
+    .about-list .list-items{
+        font-size: 15px;
+    }
+
+    .about-img1{
+        display:block;
+    }
+    .about-img2{
+        display:none;
+    }
+
+    .container-section-1h{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .currently-title{
+        font-size: 18px;
+    }
+
+    .currently-desc{
+        font-size: 14px;
+    }
+    .currently-img{
+        margin-top: 2px;
+        height: 30px;
+        width: auto;
+        transition: all 0.3s;
+    }
+
+    .container-section-3h{
+        margin-bottom: 50px;
+    }
 }
 
 /* ------------ for iPhone XR ------------ */
@@ -37,7 +113,7 @@
 @media screen and (max-width: 414px){
 
     /* navbar */
-    #main-nav {
+    /* #main-nav {
         background: var(--white-c);
         padding: 5px;
         text-align: center;
@@ -53,7 +129,7 @@
         display: flex;
         justify-content: space-between;
         z-index: 100;
-    }
+    } */
 
     nav a {
         color: var(--green-c);
@@ -198,5 +274,20 @@
         display:none;
     }
       
+    /* about */
+    .container-section-2h{
+        flex-direction: column;
+    }
+
+    .container-section-1v{
+        margin: 0 15px 120px 0;
+    }
+
+    .currently{
+        display: none;
+    }
+    .container-section-3h{
+        display: none;
+    }
 
 }
