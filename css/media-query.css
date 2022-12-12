@@ -1,7 +1,5 @@
 :root{
-    /* --green--c: #00a5f1; */
     --green-c: #27857F;
-    /* --green-c: #ff0000; */
     --beige-c: #F6F2E7;
     --white-c: #ffffff;
     --beige-ct: #F6F2E7e9;
@@ -140,9 +138,6 @@
 }
 
 
-
-
-
 /* ------------ for 620 cuz the sketchbook looks awkward here ------------ */
 
 @media screen and (max-width: 620px){
@@ -272,6 +267,10 @@
 
 @media screen and (max-width: 414px){
 
+    body{
+        overflow-x:hidden;
+    }
+
     /* navbar */
     #main-nav {
         background: var(--white-c);
@@ -306,7 +305,7 @@
     .introduction-container{
         display: flex;
         height: 100px;
-        padding: 120px 15% 0 15%; 
+        padding: 30px 15% 0 15%; 
     }
 
     .intro-head{
@@ -339,11 +338,11 @@
     }
     
     .work-title {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .cover-title{
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 400;
     }
 
@@ -352,13 +351,18 @@
     }
 
     .cover-medium{
-        font-size: 14px;
+        font-size: 18px;
     }
 
 
     /* contact */
     textarea {
-        height: 100px; resize: none; 
+        height: 120px; resize: none; 
+    }
+
+    .contact-sub{
+        font-size: 20px;
+        margin:1em 0 2em 0;
     }
     
     /* art */

@@ -38,6 +38,7 @@ client.getEntries().then((entries) =>{
             <div class = indiv-title>${entry.fields.title}</div>
             <div class = "indiv-medium">${entry.fields.medium}</div>
             <div class = "indiv-role">${entry.fields.role}</div>
+            <div class = "indiv-body">${entry.fields.body}</div>
         `;
         
         console.log(entry.fields);
