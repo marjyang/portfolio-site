@@ -102,7 +102,7 @@
     z-index: -1;
     height: 200vh;
     width: 1px;
-    background-color: black;
+    background-color: var(--blue-c);
     left: 12.7%;
     transform: translate(0, -7vh);
 }
@@ -112,7 +112,7 @@
     z-index: -1;
     height: 200vh;
     width: 1px;
-    background-color: black;
+    background-color: var(--blue-c);
     left: 53%;
     transform: translate(0, -7vh);
 }
@@ -122,7 +122,7 @@
     z-index: -1;
     height: 1px;
     width: 100%;
-    background-color: black;
+    background-color:  var(--blue-c);
     transform: translate(0, 20vh);
 }
   
@@ -131,9 +131,9 @@
     z-index: -1;
     height: 1px;
     width: 100%;
-    background-color: black;
+    background-color:  var(--blue-c);
     top: 218%;
-    transform: translate(0, 28vw);
+    transform: translate(0, 15vw);
 
 }
   

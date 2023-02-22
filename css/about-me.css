@@ -1,0 +1,152 @@
+/* ------------ about me page ------------ */
+.about-title{
+    font-size: 48px;
+    margin: 10px 20px 10px 20px;
+}
+
+.container-section-h{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 25px 0 0;
+}
+
+.container-all{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-section-1h{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-section-1v{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-section-2h{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.about-sub{
+    font-size: 30px;
+    color: var(--blue-c);
+    margin: 15px 0 0 25px;
+}
+
+.about-desc{
+    margin: 0 15px 0 25px;
+    font-size: 18px;
+}
+.list-items{
+    list-style: none;
+    font-size: 18px;
+    margin: 15px 0px 0 0;
+    /* text-transform: uppercase; */
+}
+
+.list-items li::before {
+    content: "+   "; 
+    color: black;
+}
+
+.about-img1{
+    object-fit: cover;
+    box-shadow: 0 0 10px var(--green-c);
+    transition: all 0.3s;
+    height: 300px;
+    width: 93%;
+    margin: 25px auto;
+    display:none;
+}
+
+.about-img2{
+    height: 500px;
+    width: 560px;
+    object-fit: cover;
+    margin: 0 25px 0 25px;
+    box-shadow: 0 0 10px var(--green-c);
+    transition: all 0.3s;
+    display:block;
+}
+
+.about-img1:hover, .about-img2:hover{
+    box-shadow: 0 0 25px var(--green-c);
+}
+
+.container-section-3h{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 25px 0 25px;
+    align-items: center;
+}
+
+.currently-per{
+    margin: 0 20px 0 0;
+    flex: 0 1 18%;
+}
+.currently-title{
+    font-size: 20px;
+    font-style: italic;
+    color:var(--green-c);
+}
+.currently-desc{
+    font-size: 18px;
+}
+
+.currently-img{
+    margin-top: 2px;
+    height: 50px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+
+/* ------------ lines ------------ */
+
+/* .table-line1{
+    position: absolute;
+    z-index: -1;
+    height: 26vh;
+    width: 1px;
+    background-color: var(--blue-c);
+    left: 18.7%;
+    transform: translate(0, 4vh);
+} */
+  
+/* .table-line2{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 1px;
+    background-color: var(--blue-c);
+    left: 53%;
+    transform: translate(0, -0vh);
+} */
+  
+.about-line1{
+    position: absolute;
+    z-index: -1;
+    height: 1px;
+    width: 100%;
+    background-color:  var(--blue-c);
+    transform: translate(0, 39vh);
+}
+  
+.about-line2{
+    position: absolute;
+    z-index: -1;
+    height: 1px;
+    width: 100%;
+    background-color:  var(--blue-c);
+    top: 40%;
+    transform: translate(0, 17vw);
+
+}
+  

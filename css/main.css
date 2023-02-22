@@ -84,16 +84,16 @@ nav a:hover{
 
 /* ------------ header section ------------ */
 #header{
-    height: 100vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .introduction-container{
-    margin-top: 40px;
+    margin-top: 8vh;
     display: flex;
-    height: 220px;
+    height: 140px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -102,6 +102,7 @@ nav a:hover{
 
 .intro-head{
     font-size: 32px;
+    z-index: 1;
 }
 
 .intro-sub{
@@ -111,7 +112,7 @@ nav a:hover{
 }
 
 .pushable{
-    margin: 30px 30% 0 65%;
+    margin: 0px 30% 0 65%;
 }
 
 .more-about-me{
@@ -170,15 +171,46 @@ nav a:hover{
     /* overflow: hidden; */
 }
 
+#circ-text{
+    color: var(--highlight-ct);
+    font-size: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: -100000000;
+}
+  
+.circ-anim-container{
+    position: absolute;
+    height: 250vh;
+}
+  
+.circ-anim{
+    position: fixed;
+    top: -80%;
+    left: 100%;
+}
+
+
 /* ------------ for the rest of the sections ------------ */
 .section-title{
     font-size: 36px;
+    position: relative;
     margin: 10px 20px 10px 20px;
+    z-index: 10000;
+}
+
+.section-black{
+    color: black;
+    z-index: 1;
 }
 
 .section-green{
     color: var(--green-c);
-    background-color: var(--white-c);
+    z-index: 1;
+}
+/* woRK ON THIS */
+.xtra{
+    display:inline;
 }
 
 /* ------------ work section ------------ */
@@ -192,6 +224,8 @@ nav a:hover{
     user-select: none;
     margin: 10px 20px 10px 20px;
     font-size: 36px;
+    z-index: 100;
+
 }
 
 .section-blue{
@@ -294,6 +328,8 @@ nav a:hover{
     margin: 1% 2% 0 2%;
     height: 60vh;
     border-radius: 10px;
+    z-index: 1;
+
 }
 
 input, textarea { 
@@ -331,116 +367,6 @@ textarea {
     color: black;
     border: 2px solid var(--accent-c);
 } 
-
-/* ------------ about me page ------------ */
-.about-title{
-    font-size: 48px;
-    margin: 10px 20px 10px 20px;
-}
-
-.container-section-h{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px 25px 0 0;
-}
-
-.container-all{
-    display: flex;
-    flex-direction: column;
-}
-
-.container-section-1h{
-    display: flex;
-    flex-direction: row;
-}
-
-.container-section-1v{
-    display: flex;
-    flex-direction: column;
-}
-
-.container-section-2h{
-    display: flex;
-    flex-direction: row;
-    margin-right: 20px;
-}
-
-.about-sub{
-    font-size: 30px;
-    color: var(--blue-c);
-    margin: 15px 0 0 25px;
-}
-
-.about-desc{
-    margin: 0 15px 0 25px;
-    font-size: 18px;
-}
-.list-items{
-    list-style: none;
-    font-size: 18px;
-    margin: 15px 0px 0 0;
-    /* text-transform: uppercase; */
-}
-
-.list-items li::before {
-    content: "+   "; 
-    color: black;
-}
-
-.about-img1{
-    object-fit: cover;
-    box-shadow: 0 0 10px var(--green-c);
-    transition: all 0.3s;
-    height: 300px;
-    width: 93%;
-    margin: 25px auto;
-    display:none;
-}
-
-.about-img2{
-    height: 500px;
-    width: 560px;
-    object-fit: cover;
-    margin: 0 25px 0 25px;
-    box-shadow: 0 0 10px var(--green-c);
-    transition: all 0.3s;
-    display:block;
-}
-
-.about-img1:hover, .about-img2:hover{
-    box-shadow: 0 0 25px var(--green-c);
-}
-
-.container-section-3h{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 25px 0 25px;
-    align-items: center;
-}
-
-.currently-per{
-    margin: 0 20px 0 0;
-    flex: 0 1 18%;
-}
-.currently-title{
-    font-size: 20px;
-    font-style: italic;
-    color:var(--green-c);
-}
-.currently-desc{
-    font-size: 18px;
-}
-
-.currently-img{
-    margin-top: 2px;
-    height: 50px;
-    width: auto;
-    transition: all 0.3s;
-}
-
 
 
 

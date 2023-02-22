@@ -14,6 +14,15 @@
 
 /* ------------ for 1300 ------------ */
 
+@media screen and (max-width: 1440px){
+    .about-line1{
+        display: none;
+    }
+
+    .about-line2{
+        display:none;
+    }
+}
 @media screen and (max-width: 1300px){
     
     /* header */
@@ -35,6 +44,7 @@
     }
 
     /* about-me */
+
     .about-desc{
         font-size: 16px;
     }
@@ -305,7 +315,7 @@
     .introduction-container{
         display: flex;
         height: 100px;
-        padding: 30px 15% 0 15%; 
+        padding: 0 15% 0 15%; 
     }
 
     .intro-head{
@@ -319,20 +329,24 @@
     }
 
     .pushable{
-        margin: 120px 0 0 65%;
+        margin: 100px 0 0 50%;
     }
 
     .more-about-me{
         text-align: center;
         text-decoration:none;
         color:black;
-        width:100px;
+        width:150px;
         display:inline-block;
-        line-height:40px;
-        font-size:24px;
+        line-height:38px;
+        font-size:18px;
     }
 
     /* work */
+    .xtra{
+        display:none;
+    }
+
     #work{
         padding-top:20px;
     }

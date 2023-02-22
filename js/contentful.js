@@ -39,9 +39,8 @@ client.getEntries().then((entries) =>{
                 <div class = indiv-title>${entry.fields.title}</div>
                 <div class = "indiv-medium">${entry.fields.medium}</div>
                 <div class = "indiv-role">${entry.fields.role}</div>
-                <div class = "body-image-container">
-                    <div class = "indiv-body">${entry.fields.body}</div>
-                    <img class = "indiv-thumbnail-image" src=${entry.fields.thumbnailImage.fields.file.url}>
+                <img class = "indiv-thumbnail-image" src=${entry.fields.thumbnailImage.fields.file.url}>
+                <div class = "indiv-body">${entry.fields.body}</div>
                 </div>
             </div>
         `;

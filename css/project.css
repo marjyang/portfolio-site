@@ -40,18 +40,18 @@
     font-size: 20px;
 }
 
-.body-image-container{
+/* .body-image-container{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-}
+} */
 
 .indiv-body{
-    margin: 20px;
+    margin: 20px 16vw 20px 16vw;
 }
 
 .indiv-thumbnail-image{
-    height: 60vh;
+    height: 55vh;
     width: auto;
     margin: 20px;
 }
