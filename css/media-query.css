@@ -298,6 +298,8 @@
         display: flex;
         justify-content: space-between;
         z-index: 100;
+        box-shadow: 0 0 10px var(--green-c);
+
     }
 
     nav a {
@@ -308,6 +310,26 @@
     }
 
     /* header */
+
+    #circ-text{
+        color: var(--highlight-ct);
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: uppercase;
+        z-index: -100000000;
+    }
+
+    .circ-anim-container{
+        position: absolute;
+        height: 80vh;
+    }
+      
+    .circ-anim{
+        position: fixed;
+        top: -40%;
+        left: -10%;
+    }
+
     #header{
         height: 100vh;
     }
