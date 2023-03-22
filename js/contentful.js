@@ -40,8 +40,18 @@ client.getEntries().then((entries) =>{
                 <div class = "indiv-medium">${entry.fields.medium}</div>
                 <div class = "indiv-role">${entry.fields.role}</div>
                 <img class = "indiv-thumbnail-image" src=${entry.fields.thumbnailImage.fields.file.url}>
-                <div class = "indiv-body">${entry.fields.body}</div>
-                </div>
+                <div class = "indiv-background">${entry.fields.background}</div>
+                <div class = "indiv-problem">${entry.fields.problem}</div>
+                <div class = "indiv-step1">${entry.fields.step1}</div>
+                <div class = "indiv-step2">${entry.fields.step2}</div>
+                <div class = "indiv-step3">${entry.fields.step3}</div>
+                <div class = "indiv-step4">${entry.fields.step4}</div>
+                <div class = "indiv-step5">${entry.fields.step5}</div>
+                <div class = "indiv-step6">${entry.fields.step6}</div>
+                <div class = "indiv-step7">${entry.fields.step7}</div>
+                <div class = "indiv-step8">${entry.fields.step8}</div>
+                <div class = "indiv-step9">${entry.fields.step9}</div>
+                <div class = "indiv-step10">${entry.fields.step10}</div>
             </div>
         `;
         
