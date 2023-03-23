@@ -32,14 +32,22 @@
     font-size: 40px;
     font-weight: 400;
     color:black;
-    margin:150px 15px 0 15px;
+    margin:120px 15px 10px 15px;
 }
 
 .indiv-heading{
     font-size: 26px;
     color:black;
-    margin:12vh 10px 10px 10px;
-    background: var(--highlight-c);
+    margin:5vh 10px 10px 10px;
+    font-weight: 400;
+    /* background: var(--highlight-c); */
+}
+.indiv-info{
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+    background: #f5d8ff;
 }
 
 .indiv-medium{
