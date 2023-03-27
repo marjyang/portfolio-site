@@ -12,9 +12,8 @@
     --orange-c: #f0f2ff;
 }
 
-/* ------------ for 1300 ------------ */
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1500px){
     .about-line1{
         display: none;
     }
@@ -23,6 +22,9 @@
         display:none;
     }
 }
+
+/* ------------ for 1300 ------------ */
+
 @media screen and (max-width: 1300px){
     
     /* header */
