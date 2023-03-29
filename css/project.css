@@ -68,6 +68,7 @@
     width: 60vw;
     height: auto;
     margin: 20px;
+    user-select: none;
 }
 
 .rounded-img{
