@@ -138,6 +138,7 @@
     width: 100%;
     background-color:  var(--blue-c);
     transform: translate(0, 39vh);
+    display: none;
 }
   
 .about-line2{
@@ -148,6 +149,7 @@
     background-color:  var(--blue-c);
     top: 40%;
     transform: translate(0, 17vw);
+    display: none;
 
 }
   
