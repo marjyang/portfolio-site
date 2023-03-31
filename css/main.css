@@ -5,7 +5,7 @@
     --beige-c: #F6F2E7;
     --white-c: #ffffff;
     --beige-ct: #F6F2E7e9;
-    --grey-c: #eaeaea;
+    --grey-c: #f4f3f3;
     --accent-c: #b6d844;
     --highlight-c: #ebffa9;
     --highlight-ct: #ebffa9d4;
@@ -75,7 +75,7 @@ a:hover{
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
-    z-index: 100;
+    z-index: 100000;
 }
 
 nav a:hover{
@@ -190,7 +190,40 @@ nav a:hover{
     left: 100%;
 }
 
+.petals-container{
+    position: absolute;
+    height: 80vh;
+    z-index: -100;
+}
 
+.petals{
+    position:relative;
+    top: 8%;
+    left: 5%;
+}
+
+#flower{
+    height:70vh;
+    width: auto;
+}
+
+
+/* .petals-container2{
+    position: absolute;
+    height: 40vh;
+    z-index: -100;
+}
+
+.petals2{
+    position:relative;
+    top: -20%;
+    left: 190%;
+}
+
+#flower2{
+    height:40vh;
+    width: auto;
+} */
 /* ------------ for the rest of the sections ------------ */
 .section-title{
     font-size: 36px;

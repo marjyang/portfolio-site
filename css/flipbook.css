@@ -37,7 +37,16 @@
     height: auto;
     width: 37.8%;
     transform:translate(15.6vw, 89px);
-    z-index: -10;
+    z-index: -1000;
+    user-select: none;
+}
+
+.flipbook-template-top{
+    position: absolute;
+    height: auto;
+    width: 37.8%;
+    transform:translate(15.6vw, 89px);
+    z-index: -5;
     user-select: none;
 }
 

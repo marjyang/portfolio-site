@@ -25,7 +25,6 @@
     align-items: center;
     flex-direction: column;
     margin:0 20vw 0 20vw;
-
 }
 
 .indiv-title{
@@ -67,6 +66,33 @@
 .indiv-img{
     width: 60vw;
     height: auto;
+    margin: 20px;
+    user-select: none;
+}
+.indiv-img-gd{
+    width: auto;
+    height: 85vh;
+    margin: 20px;
+    user-select: none;
+}
+
+.indiv-img-doesnt-fit{
+    width: 60vw;
+    height: auto;
+    margin: 20px;
+    user-select: none;
+}
+
+.indiv-img2{
+    height: 30vw;
+    width: auto;
+    margin: 20px;
+    user-select: none;
+}
+
+.indiv-vid2{
+    height: 70vh;
+    width: auto;
     margin: 20px;
     user-select: none;
 }
